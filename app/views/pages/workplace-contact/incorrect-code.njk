@@ -1,0 +1,20 @@
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "casa/components/input/macro.njk" import casaGovukInput with context %}
+{% from "casa/components/date-input/macro.njk" import casaGovukDateInput with context %}
+
+{% extends "layouts/journey.njk" %}
+
+{% block casaPageTitle %}
+    {{ t('incorrect-code:pageTitle') }}
+{% endblock %}
+
+{% block content_block %}
+
+    <h1 class="govuk-heading-l">{{ t('incorrect-code:h1') }}</h1>
+    <p class="govuk-body">{{ t('incorrect-code:p1') }}</p>
+
+    <p class="govuk-body"><a
+                href="?skipto=confirm-claim-reference-number">{{ t('incorrect-code:link') }}</a></p>
+
+{% endblock %}
+

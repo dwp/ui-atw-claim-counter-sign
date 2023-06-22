@@ -1,0 +1,15 @@
+{
+  "pageTitle": "What you’ll need to review the claim",
+  "h1": "What you’ll need to review the claim",
+  "p1": "%s has made a claim from their Access to Work grant. You need to review their claim before we can make a payment.",
+  "p2": "You’ll need to confirm:",
+  "ul-sw": {
+    "li1": "your employer and job details",
+    "li2": "%s was in work on the days they’re claiming for",
+    "li3": "how long %s received support for on each date"
+  },
+  "ul-tw": {
+    "li1": "your employer and job details",
+    "li2": "%s was in work on the days they’re claiming for"
+  }
+}

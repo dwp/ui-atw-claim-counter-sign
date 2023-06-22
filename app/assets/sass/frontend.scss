@@ -1,0 +1,23 @@
+$govuk-global-styles: true;
+
+$publicUrl: "/review-claim/public";
+
+@function constructPublicFontUrl($filename) {
+  @return $publicUrl + "/assets/fonts/" + $filename;
+}
+$govuk-font-url-function: constructPublicFontUrl;
+
+@import "../../../node_modules/govuk-frontend/govuk/all";
+@import "../../../node_modules/@dwp/govuk-casa/src/scss/casaElements";
+@import "../../../node_modules/hmrc-frontend/hmrc/components/header/header";
+@import "../../../node_modules/hmrc-frontend/hmrc/components/language-select/language-select";
+
+.govuk-footer__copyright-logo {
+  background-image: url($publicUrl + "/assets/images/govuk-crest.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .govuk-footer__copyright-logo {
+    background-image: url($publicUrl + "/assets/images/govuk-crest-2x.png");
+  }
+}

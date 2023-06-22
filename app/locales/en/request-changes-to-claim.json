@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Send this claim back to %s to correct it",
+  "h1": "Send this claim back to %s to correct it",
+  "h1-ga": "Send this claim back to employee to correct it",
+  "p1": "We'll let %s know you have not confirmed their claim and tell them the reason.",
+  "p2": "Once %s has updated their claim, we'll send it back to you to review again.",
+  "h2": "Claim details",
+  "table1": {
+    "row1": {
+      "col1": "Date of claim"
+    },
+    "row2": {
+      "col1": "Claim reference number"
+    },
+    "row3": {
+      "col1": "Type of claim"
+    },
+    "row4": {
+      "col1": "Reason you cannot confirm this claim"
+    }
+  },
+  "link": "I agree - send claim back"
+}

@@ -1,0 +1,28 @@
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "casa/components/input/macro.njk" import casaGovukInput with context %}
+{% from "casa/components/date-input/macro.njk" import casaGovukDateInput with context %}
+
+{% extends "layouts/journey.njk" %}
+
+{% block casaPageTitle %}
+    {{ t('company-organisation-name:pageTitle') }}
+{% endblock %}
+
+{% block journey_form %}
+
+    <h1 class="govuk-heading-l">{{ t('company-organisation-name:h1') }}</h1>
+
+    {{ casaGovukInput({
+        id: 'f-companyOrganisationName',
+        name: 'companyOrganisationName',
+        value: formData.companyOrganisationName,
+        casaErrors: formErrors,
+        classes: "govuk-input--width-40",
+        attributes: {
+            "aria-label": t('company-organisation-name:h1'),
+            "aria-required": true
+        },
+        autocomplete: 'organization'
+    }) }}
+
+{% endblock %}

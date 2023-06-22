@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Enter the 6-digit security number we sent to your email",
+  "h1": "Enter the 6-digit security number we sent to your email",
+  "p1": "We’ve sent you an email with a 6-digit security number. It should only take a few minutes to arrive.",
+  "hint": "For example, 123456",
+  "validation": {
+    "required": "Enter a security number",
+    "tooLong": "Security number must only include 6 numbers",
+    "invalid": "Security number must only include numbers between 1 and 9",
+    "notFound": "Enter a valid security number",
+    "summary_email": "Enter the 6-digit code we sent to you by email",
+    "summary_try_again": "We do not recognise the 6-digit code you entered - try again",
+    "summary_main": "We do not recognise the 6-digit code you entered ",
+    "summary_attempts": {
+      "p1": "you have ",
+      "p2": " attempt(s) remaining"
+    }
+  },
+  "link": "I did not get an email",
+  "request-email" : "I did not get an email",
+  "request-email-message": " If the email is not there, we can send another code.",
+  "resend": {
+    "1": "It may take a few minutes for it to arrive in your email inbox. Remember to check your junk folder. If the email is not there, ",
+    "linkText": " we can send another code.",
+    "linkTag": "security-number",
+    "confirmMsg": "We've sent a new 6-digit security number to your email"
+  }
+}

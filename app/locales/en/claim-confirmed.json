@@ -1,0 +1,15 @@
+{
+  "pageTitle": "Claim confirmed",
+  "h1": "Claim confirmed",
+  "reference": "Your employee's claim reference number",
+  "p1": "You should give us this claim reference number if you contact us about your claim.",
+  "whatNext": {
+    "h2": "What happens next",
+    "p1": "If we approve %s’s claim, we’ll pay the money into the bank account they chose.",
+    "p2": "If we do not approve the claim, we’ll contact %s to let them know what to do next.",
+    "p3": "%s can see the progress of their claim in their claims history."
+  },
+  "feedback": {
+    "link": "What did you think of this service?"
+  }
+}

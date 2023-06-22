@@ -1,0 +1,85 @@
+{% extends "casa/review/page-block.njk" %}
+
+{% from "govuk/components/summary-list/macro.njk" import "govukSummaryList" with context %}
+
+
+
+{% block reviewBlock %}
+
+    {% set companyOrganisationName = journeyContext['company-organisation-name'].companyOrganisationName %}
+    {# {% set organisationAddress = journeyContext['details-of-someone-who-can-confirm-costs'].fullName %} #}
+    {% set address = journeyContext['__hidden_address__'] %}
+    {% set jobTitle = journeyContext['job-title'].jobTitle %}
+
+    {% set addressBlock %}
+        <ul class="govuk-list">
+            {% for key, item in address.addressDetails %}
+                {% if item %}
+                    <li>{{ item }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endset -%}
+
+    {% set refererUrl = '?edit&editorigin=' + casa.mountUrl + 'check-your-answers' %}
+
+    {% set data = [] %}
+
+    {% set data = (data.push(
+        {
+            key: { text: t('company-organisation-name:reviewBlock.companyNameKey') },
+            value: { text: companyOrganisationName },
+            actions: {
+            items: [
+                {
+                    href: 'company-organisation-name' + refererUrl,
+                    text: t('review:block.changeLink'),
+                    visuallyHiddenText: t('company-organisation-name:reviewBlock.changeCompanyName'),
+                    classes: 'govuk-link--no-visited-state hide-print'
+                }
+            ]
+        }
+        }
+    ), data) %}
+
+    {% set data = (data.push(
+        {
+            key: { text: t('company-organisation-name:reviewBlock.addressKey') },
+            value: { html: addressBlock | safe },
+            actions: {
+            items: [
+                {
+                    href: 'postcode-of-company' + refererUrl,
+                    text: t('review:block.changeLink'),
+                    visuallyHiddenText: t('company-organisation-name:reviewBlock.changeAddress'),
+                    classes: 'govuk-link--no-visited-state hide-print'
+                }
+            ]
+        }
+        }
+    ), data) %}
+
+    {% set data = (data.push(
+        {
+            key: { text: t('company-organisation-name:reviewBlock.jobTitleKey') },
+            value: { text: jobTitle },
+            actions: {
+            items: [
+                {
+                    href: 'job-title' + refererUrl,
+                    text: t('review:block.changeLink'),
+                    visuallyHiddenText: t('company-organisation-name:reviewBlock.changeJobTitle'),
+                    classes: 'govuk-link--no-visited-state hide-print'
+                }
+            ]
+        }
+        }
+    ), data) %}
+
+    <h2 class="govuk-heading-m">{{ t('company-organisation-name:reviewBlock.h2') }}</h2>
+
+    {{ govukSummaryList({
+        rows: data
+    }) }}
+
+{% endblock %}

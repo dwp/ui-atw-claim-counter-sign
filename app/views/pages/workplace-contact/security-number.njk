@@ -1,0 +1,62 @@
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "casa/components/input/macro.njk" import casaGovukInput with context %}
+{% from "casa/components/date-input/macro.njk" import casaGovukDateInput with context %}
+{% from "govuk/components/details/macro.njk" import govukDetails %}
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+
+{% extends "layouts/journey.njk" %}
+
+{% block casaPageTitle %}
+    {{ t('security-number:pageTitle') }}
+{% endblock %}
+
+   {% set insetText %}
+        <p>{{ t('security-number:resend.1') }}  <a href="{{ "security-number?m=rs" }}">{{ t('security-number:resend.linkText') }}</a></p>
+    {% endset -%}
+
+{% set html %}
+  <p class="govuk-body">{{ t('security-number:resend.confirmMsg') }}</p>
+{% endset %}
+
+{% block journey_form %}
+
+ {% if showResend %}
+
+{{ govukNotificationBanner({
+  html: html,
+  type: success,
+  role: alert,
+  classes: "govuk-notification-banner, govuk-notification-banner--success"
+}) }}
+
+ {% endif %}
+
+  <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend">
+          <h1 class="govuk-heading-l">{{ t('security-number:h1') }}</h1>
+      </legend>
+  </fieldset>
+
+  <p class="govuk-body">{{ t('security-number:p1') }}</p>
+
+  {{ govukDetails({
+    summaryText: t('security-number:request-email'),
+    html:   insetText
+  }) }}
+
+  {{ casaGovukInput({
+      id: 'f-securityNumber',
+      name: 'securityNumber',
+      value: formData.securityNumber,
+      casaErrors: formErrors,
+      classes: "govuk-input--width-10",
+      hint: {
+          text:  t("security-number:hint")
+      },
+      attributes: {
+              "aria-label": t("security-number:h1"),
+              "aria-required": true
+      }
+  }) }}
+
+{% endblock %}

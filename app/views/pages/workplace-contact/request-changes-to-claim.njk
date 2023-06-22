@@ -1,0 +1,56 @@
+{% from "govuk/components/button/macro.njk" import govukButton with context %}
+
+{% extends "layouts/journey.njk" %}
+
+{% block casaPageTitle %}
+    {{ t('request-changes-to-claim:pageTitle') }}
+{% endblock %}
+
+{% block journey_form %}
+
+    <h1 class="govuk-heading-l" data-ga-question="{{ t('request-changes-to-claim:h1-ga') }}">
+        {{ t('request-changes-to-claim:h1', employeeName) }}</h1>
+    <p class="govuk-body">{{ t('request-changes-to-claim:p1', employeeName) }}</p>
+    <p class="govuk-body">{{ t('request-changes-to-claim:p2', employeeName) }}</p>
+
+    <hr/>
+    <br/>
+
+    <h2 class="govuk-heading-m">{{ t('request-changes-to-claim:h2') }}</h2>
+
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('request-changes-to-claim:table1.row1.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ createdDate | formatLocalDateTime(locale) }}
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('request-changes-to-claim:table1.row2.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ claimReference }}
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('request-changes-to-claim:table1.row3.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ typeOfClaim }}
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('request-changes-to-claim:table1.row4.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ claimIncorrect }}
+            </dd>
+        </div>
+    </dl>
+
+{% endblock %}

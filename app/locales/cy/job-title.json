@@ -1,0 +1,8 @@
+{
+  "pageTitle": "Beth yw teitl eich swydd?",
+  "h1": "Beth yw teitl eich swydd?",
+  "validation": {
+    "required": "Rhowch deitl eich swydd",
+    "specialCharacter": "Mae'n rhaid i deitl swydd beidio cynnwys rhifau neu nodau fel * & ^ % $ neu #"
+  }
+}

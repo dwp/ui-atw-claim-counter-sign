@@ -1,0 +1,31 @@
+{
+  "pageTitle": "About %s's claim",
+  "h1": "About %s's claim",
+  "h1-ga": "About your employee's claim",
+  "reviewBlock": {
+    "fullName": "Joe Bloggs",
+    "DateOfClaim": "02 June - 2021",
+    "ClaimReferenceNumber": "",
+    "claimType": "Travel to work"
+  },
+  "table": {
+    "row1": {
+      "col1": "Name"
+    },
+    "row2": {
+      "col1": "Date of claim"
+    },
+    "row3": {
+      "col1": "Claim reference number"
+    },
+    "row4": {
+      "col1": "Type of claim"
+    }
+  },
+  "h2-2": "Do you want to review this claim?",
+  "radioYes": "Yes",
+  "radioNo": "No",
+  "validation": {
+    "required": "Select yes if you want to review this claim"
+  }
+}

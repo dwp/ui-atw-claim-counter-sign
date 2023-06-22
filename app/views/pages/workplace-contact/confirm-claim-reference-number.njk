@@ -1,0 +1,19 @@
+{% extends "layouts/journey.njk" %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block casaPageTitle %}
+    {{ t('confirm-claim-reference-number:pageTitle') }}
+{% endblock %}
+
+{% block content_block %}
+
+    <h1 class="govuk-heading-l">{{ t('confirm-claim-reference-number:h1') }}</h1>
+    <p class="govuk-body">{{ t('confirm-claim-reference-number:p1') }}</p>
+    <p class="govuk-body">{{ t('confirm-claim-reference-number:p2') }}</p>
+
+    {{ govukButton({
+        text: t('common:signOut'),
+        href: casa.mountUrl
+    }) }}
+
+{% endblock %}

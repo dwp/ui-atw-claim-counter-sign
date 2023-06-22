@@ -1,0 +1,31 @@
+{
+  "pageTitle": "Am gais %s",
+  "h1": "Am gais %s",
+  "h1-ga": "Am gais eich gweithiwr",
+  "reviewBlock": {
+    "fullName": "Joe Bloggs",
+    "DateOfClaim": "02 Mehefin - 2021",
+    "ClaimReferenceNumber": "",
+    "claimType": "Teithio i'r gwaith"
+  },
+  "table": {
+    "row1": {
+      "col1": "Enw"
+    },
+    "row2": {
+      "col1": "Dyddiad y cais"
+    },
+    "row3": {
+      "col1": "Rhif cyfeirnod y cais"
+    },
+    "row4": {
+      "col1": "Math o gais"
+    }
+  },
+  "h2-2": "Ydych chi eisiau adolygu'r cais hwn?",
+  "radioYes": "Ydw",
+  "radioNo": "Na",
+  "validation": {
+    "required": "Dewiswch ydw os ydych chi eisiau adolygu'r cais hwn"
+  }
+}

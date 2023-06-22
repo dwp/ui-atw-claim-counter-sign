@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Beth yw enw'r cwmni neu'r sefydliad rydych yn gweithio iddo?",
+  "h1": "Beth yw enw'r cwmni neu'r sefydliad rydych yn gweithio iddo?",
+  "validation": {
+    "required": "Rhowch enw'r cwmni neu'r sefydliad rydych yn gweithio iddo"
+  },
+  "reviewBlock": {
+    "h2": "Gwybodaeth am Sefydliad",
+    "companyNameKey": "Enw'r cwmni neu'r sefydliad rydych yn gweithio iddo",
+    "changeCompanyName": "Enw'r Cwmni",
+    "addressKey": "Cyfeiriad sefydliad",
+    "changeAddress": "Cyfeiriad Cwmni",
+    "jobTitleKey": "Title eich swydd",
+    "changeJobTitle": "Teitl Swydd Cwmni"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "app": {
+    "port": 3041,
+    "mountUrl": "/review-claim/"
+  },
+  "logger": {
+    "level": "info",
+    "filename": "atw-claim-workplace-contact.log"
+  },
+  "session": {
+    "secure": {
+      "cookie": false
+    },
+    "length": 3600,
+    "name": "sessions_atwclaim_countersign",
+    "secret": "SuperSecret",
+    "redis": {
+      "host": null,
+      "port": null,
+      "password": null,
+      "database": null,
+      "cluster": null,
+      "useEncryption": null,
+      "kmsEndpoint": null,
+      "kmsId": null,
+      "awsRegion": null,
+      "prefix": null,
+      "useTLS": false
+    }
+  },
+  "languageToggle": {
+    "showWelshLanguageToggle": true
+  },
+  "services": {
+    "claimService": {
+      "url": "http://localhost:9014"
+    },
+    "securityNumberService": {
+      "url": "http://localhost:9938",
+      "skipValidation": false
+    },
+    "addressLookup": {
+      "url": "http://localhost:18082",
+      "contextPath": "location-service",
+      "ca": null,
+      "proxy": null
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{% extends "layouts/journey.njk" %}
+{% from "govuk/components/select/macro.njk" import govukSelect %}
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{% block casaPageTitle %}
+    {{ t('search-for-address-of-company:pageTitle', companyName) }}
+{% endblock %}
+
+{% set addressLength = addresses.length - 1 if addresses.length > 0 else addresses.length %}
+
+{% block journey_form %}
+
+    <h1 class="govuk-heading-l"  data-ga-question="{{ t('search-for-address-of-company:h1-ga') }}">
+        {{ t('search-for-address-of-company:h1', companyName) }}</h1>
+
+    <p class="govuk-body">
+        <strong>{{ t('search-for-address-of-company:addressFound', addressLength) }} {{ t('search-for-address-of-company:for') }} {{ postcode }}</strong>
+        <a href="{{ changePostcodeUrl }}">Change</a>
+    </p>
+
+    {% if addressLength > 0 %}
+
+        {{ govukSelect({
+            id: "f-uprn",
+            name: "uprn",
+            label: {
+                text: t('search-for-address-of-company:label')
+            },
+            attributes: {
+                "aria-required": true
+            },
+            classes: "govuk-select--width-10",
+            items: addresses,
+            errorMessage: {
+                text: t(formErrors.uprn[0].inline)
+            } if formErrors.uprn.length
+        }) }}
+
+    {% else %}
+        {{ govukInsetText({
+            text: t('search-for-address-of-company:noAddressesFound', postcode)
+        }) }}
+    {% endif %}
+
+    {% if addressLength > 0 %}
+        <p class="govuk-body"><a
+                    href="{{ manualAddressUrl }}">{{ t('search-for-address-of-company:manualLink',
+                    companyName) }}</a></p>
+    {% else %}
+        <p class="govuk-body"><a
+                    href="{{ manualAddressUrl }}">{{ t('search-for-address-of-company:manualLinkNoAddress',
+                    companyName) }}</a></p>
+    {% endif %}
+
+
+
+
+
+{% endblock %}

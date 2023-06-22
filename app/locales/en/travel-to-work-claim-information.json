@@ -1,0 +1,30 @@
+{
+  "reviewBlock": {
+    "sectionHeader": "Claim information",
+    "taxi": "Taxi",
+    "lift": "Lift from a friend, colleague or relative",
+    "journeysOrMileage": "Travel to and from work",
+    "liftMileage": "Total distance in miles travelled to and from work each day",
+    "liftJourney": "Total number of journeys taken to and from work each day",
+    "monthOfTravel": "Month of travel",
+    "changeMonthOfTravel": "month of travel",
+    "daysOfTravel": "Days journeys were made in %s",
+    "changeDaysOfTravel": "days journeys were made in %s",
+    "files": "Receipts or invoices uploaded",
+    "changeFiles": "claim evidence",
+    "typeOfTravel": "Type of travel",
+    "changeTypeOfTravel": "Type of travel",
+    "totalCostJourneys": "Total cost of journeys",
+    "changeTotalCostJourneys": "total cost of journeys",
+    "mileage": "%s miles",
+    "journeys": "%s journeys",
+    "totalOfAllJourneys": "Total number of journeys",
+    "totalOfAllMileage": "Total number of miles",
+    "daysOfMileage": "Days miles were made in %s",
+    "changeDaysOfMileage": "days miles were made in %s",
+    "liftCostTitle": "Total amount Access to Work will contribute towards your travel",
+    "liftCostText": "The total amount you will be paid back will be calculated based on your agreed mileage rate per mile quoted to you in your Access to Work grant approval letter, minus any agreed personal or employer contributions.",
+    "employerContributionTitle": "Total amount Access to Work will contribute towards your journeys",
+    "employerContribution": "The amount we will pay back will be slightly less than the total cost of the journeys because we will deduct the amounts you or your employer have agreed to pay."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Anfonwch y cais hwn yn ôl i %s i'w gywiro",
+  "h1": "Anfonwch y cais hwn yn ôl i %s i'w gywiro",
+  "h1-ga": "Anfonwch y cais hwn yn ôl i'r gweithiwr i'w gywiro",
+  "p1": "Byddwn yn dweud wrth %s nad ydych wedi cadarnhau eu cais ac yn dweud wrthym y rheswm.",
+  "p2": "Unwaith y bydd %s wedi diweddaru eu cais, byddwn yn ei anfon yn ôl i chi i'w adolygu.",
+  "h2": "Manylion y cais",
+  "table1": {
+    "row1": {
+      "col1": "Dyddiad y cais"
+    },
+    "row2": {
+      "col1": "Rhif cyfeirnod y cais"
+    },
+    "row3": {
+      "col1": "Math o gais"
+    },
+    "row4": {
+      "col1": "Y rheswm pam na allwch gadarnhau'r cais hwn"
+    }
+  },
+  "link": "Rwyf yn cytuno - anfon y cais yn ôl"
+}

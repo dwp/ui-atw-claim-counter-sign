@@ -1,0 +1,15 @@
+{
+  "pageTitle": "Cais wedi'i gadarnhau",
+  "h1": "Cais wedi'i gadarnhau",
+  "reference": "Rhif cyfeirnod cais eich gweithiwr",
+  "p1": "Dylech roi'r rhif cyfeirnod cais hwn i ni os byddwch yn cysylltu â ni am eich cais.",
+  "whatNext": {
+    "h2": "Beth sy'n digwydd nesaf",
+    "p1": "Os byddwn yn cymeradwyo cais %s, byddwn yn talu'r arian i mewn i'r cyfrif banc maent wedi'i ddewis.",
+    "p2": "Os na fyddwn yn cymeradwyo'r cais, byddwn yn cysylltu â %s i ddweud wrthynt beth i'w wneud nesaf.",
+    "p3": "Gall %s weld datblygiad eu cais yn eu hanes ceisiadau."
+  },
+  "feedback": {
+    "link": "Beth oeddech chi'n ei feddwl o'r gwasanaeth hwn?"
+  }
+}

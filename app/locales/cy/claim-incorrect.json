@@ -1,0 +1,16 @@
+{
+  "pageTitle": "Dywedwch wrthym pam na allwch chi gadarnhau'r cais hwn",
+  "h1": "Dywedwch wrthym pam na allwch chi gadarnhau'r cais hwn",
+  "sw": {
+    "p1": "Er enghraifft, gallai %s fod yn gwneud cais am ormod neu ddim digon o ddyddiau o gymorth."
+  },
+  "tw": {
+    "p1": "Er enghraifft, gallai %s fod yn gwneud cais am ormod neu ddim digon o ddyddiau o deithio, neu efallai nad oeddent yn y gwaith am un o'r dyddiau maent yn gwneud cais amdano."
+  },
+  "p2": "Mae angen i chi sicrhau eich bod yn darparu digon o wybodaeth, fel bod %s yn deall beth sydd angen ei ddiweddaru.",
+  "validation": {
+    "required": "Rhowch reswm pam na allwch gadarnhau'r cais hwn",
+    "tooLong": "Mae'n rhaid i'r rheswm pam na allwch gadarnhau'r cais hwn fod yn 300 nod neu lai"
+  },
+  "link": "Mae gennych 300 nod yn weddil"
+}

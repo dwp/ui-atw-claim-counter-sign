@@ -1,0 +1,27 @@
+{% extends "layouts/journey.njk" %}
+{% from "govuk/components/panel/macro.njk" import govukPanel %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block casaPageTitle %}
+    {{ t('claim-confirmed:pageTitle') }}
+{% endblock %}
+
+{% block content_block %}
+    {{ govukPanel({
+        titleText: t('claim-confirmed:h1')
+    }) }}
+
+    <h2 class="govuk-heading-m">{{ t('claim-confirmed:whatNext.h2') }}</h2>
+
+    <p class="govuk-body">{{ t('claim-confirmed:whatNext.p1', employeeName) }}</p>
+    <p class="govuk-body">{{ t('claim-confirmed:whatNext.p2', employeeName) }}</p>
+    <p class="govuk-body">{{ t('claim-confirmed:whatNext.p3', employeeName) }}</p>
+
+    <p class="govuk-body">
+        <a href="{{ casa.mountUrl }}">{{ t('common:signOut') }}</a>
+    </p>
+    <p class="govuk-body">
+        <a href={{ feedbackUrl }}>{{ t('claim-confirmed:feedback.link') }}</a>
+    </p>
+
+{% endblock %}

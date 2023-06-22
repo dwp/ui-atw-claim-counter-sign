@@ -1,0 +1,33 @@
+{% extends "layouts/journey.njk" %}
+{% from "casa/components/input/macro.njk" import casaGovukInput with context %}
+
+{% block casaPageTitle %}
+    {{ t('postcode-of-company:pageTitle', companyName) }}
+{% endblock %}
+
+
+{% block journey_form %}
+
+    <h1 class="govuk-heading-l"  data-ga-question="{{ t('postcode-of-company:h1-ga') }}">
+        {{ t('postcode-of-company:h1', companyName) }}</h1>
+
+    {{ casaGovukInput({
+        label: {
+            text: t('postcode-of-company:p'),
+            classes: "govuk-body",
+            isPageHeading: true
+        },
+        hint: {
+            text: t('postcode-of-company:inputs.postcode.hint')
+        },
+        attributes: {
+            "aria-required": true
+        },
+        classes:"govuk-input--width-10",
+        name: "postcode",
+        value: formData.postcode,
+        casaErrors: formErrors,
+        autocomplete: 'postal-code'
+    }) }}
+
+{% endblock %}

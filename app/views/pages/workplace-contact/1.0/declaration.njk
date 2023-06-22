@@ -1,0 +1,28 @@
+{% from "govuk/components/button/macro.njk" import govukButton with context %}
+
+{% extends "layouts/journey.njk" %}
+
+{% block casaPageTitle %}
+    {{ t('declaration:pageTitle') }}
+{% endblock %}
+
+{% block journey_form %}
+
+    <h1 class="govuk-heading-l">{{ t('declaration:h1') }}</h1>
+    <p class="govuk-body">{{ t('declaration:p1') }}</p>
+    
+    {% if typeOfClaim === 'SW' %}
+         <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li class="govuk-body">{{ t('declaration:ul-sw.li1', employeeName) }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-sw.li2', employeeName) }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-sw.li3', employeeName) }}</li>
+        </ul>
+    {% elif typeOfClaim === 'TW' %}
+         <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li class="govuk-body">{{ t('declaration:ul-tw.li1') }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tw.li2') }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tw.li3') }}</li>
+        </ul>
+    {% endif %}
+
+{% endblock %}

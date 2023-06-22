@@ -1,0 +1,18 @@
+{
+  "pageTitle": "Enter the claim reference number",
+  "h1": "Enter the claim reference number",
+  "p1": "You can find the number in the email we sent you asking you to review the claim.",
+  "hint": "For example, SW1002345",
+  "validation": {
+    "prefix": "Claim reference number must start with either SW or TW",
+    "required": "Enter claim reference number",
+    "tooLong": "Claim reference number must only contain 8 numbers",
+    "invalid": "Enter a claim reference number in the correct format",
+    "notFound": {
+      "p1": "Enter a valid claim reference number",
+      "p2": "Enter a valid claim reference number - try again"
+    },
+    "specialCharacter": "Enter a claim reference number in the correct format"
+  },
+  "link": "I do not have the claim reference number"
+}

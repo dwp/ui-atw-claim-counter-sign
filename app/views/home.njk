@@ -1,0 +1,23 @@
+{% extends "layouts/journey.njk" %}
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block casaPageTitle %}
+    {{ t('home:pageTitle') }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="govuk-heading-xl">{{ t('home:h1') }}</h1>
+
+    {{ t('home:html.body') | safe }}
+
+    <p class="govuk-body">
+        {{ govukButton({
+            text: t('home:btn'),
+            href: casa.mountUrl + "enter-claim-reference-number",
+            isStartButton: true
+        }) }}
+    </p>
+
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{
+  "pageTitle": "What’s your job title?",
+  "h1": "What’s your job title?",
+  "validation": {
+    "required": "Enter your job title",
+    "specialCharacter": "Job title must not include numbers or characters like * & ^ % $ or #"
+  }
+}

@@ -1,0 +1,83 @@
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/summary-list/macro.njk" import "govukSummaryList" with context %}
+{% from "casa/components/radios/macro.njk" import casaGovukRadios with context %}
+{% from "casa/components/input/macro.njk" import casaGovukInput with context %}
+
+{% extends "layouts/journey.njk" %}
+
+{% block casaPageTitle %}
+    {{ t('about-claim:pageTitle', employeeName) }}
+{% endblock %}
+
+{% block journey_form %}
+
+    <h1 class="govuk-heading-l hide-print" data-ga-question="{{ t('about-claim:h1-ga') }}">
+        {{ t('about-claim:h1', employeeName) }}</h1>
+
+    <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('about-claim:table.row1.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ employeeName }}
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('about-claim:table.row2.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ createdDate | formatLocalDateTime(locale) }}
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('about-claim:table.row3.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ claimReference }}
+            </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                {{ t('about-claim:table.row4.col1') }}
+            </dt>
+            <dd class="govuk-summary-list__value">
+                {{ typeOfClaim }}
+            </dd>
+        </div>
+    </dl>
+
+    {{ casaGovukRadios({
+        classes: "govuk-radios--inline",
+        idPrefix: "reviewClaim",
+        name: "reviewClaim",
+        casaValue: formData.reviewClaim,
+        casaErrors: formErrors,
+        fieldset: {
+            legend: {
+                text: t('about-claim:h2-2'),
+                isPageHeading: false,
+                classes: "govuk-fieldset__legend--m"
+            }
+        },
+        items: [
+            {
+                value: "yes",
+                text: t('about-claim:radioYes'),
+                attributes: {
+                    "aria-required": true
+                }
+            },
+            {
+                value: "no",
+                text: t('about-claim:radioNo'),
+                attributes: {
+                    "aria-required": true
+                }
+            }
+        ]
+    }) }}
+
+{% endblock %}

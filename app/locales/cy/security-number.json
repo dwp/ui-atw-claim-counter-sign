@@ -1,0 +1,28 @@
+{
+  "pageTitle": "Rhowch y rhif diogelwch 6 digid a anfonwyd gennym i'ch e-bost",
+  "h1": "Rhowch y rhif diogelwch 6 digid a anfonwyd gennym i'ch e-bost",
+  "p1": "Rydym wedi anfon e-bost atoch gyda rhif diogelwch 6 digid. Dim ond ychydig funudau y dylai gymryd i gyrraedd.",
+  "hint": "Er enghraifft,  123456",
+  "validation": {
+    "required": "Rhowch rif diogelwch",
+    "tooLong": "Mae'n rhaid i rif diogelwch ond cynnwys 6 rhif ",
+    "invalid": "Mae'n rhaid i rif diogelwch ond cynnwys rhifau rhwng 1 a 9",
+    "notFound": "Rhowch rif diogelwch dilys",
+    "summary_email": "Rhowch y cod 6 digid rydym wedi'i anfon i chi drwy e-bost",
+    "summary_try_again": "Nid ydym yn adnabod y cod 6 digid rydych wedi'i roi - rhowch gynnig arall",
+    "summary_main": "Nid ydym yn adnabod y cod 6 digid rydych wedi'i roi ",
+    "summary_attempts": {
+      "p1": "mae gennych ",
+      "p2": " ymgais ar ôl"
+    }
+  },
+  "link": "Ni chefais e-bost",
+  "request-email" : "Ni chefais e-bost",
+  "request-email-message": " Os nad yw'r e-bost yno, gallwn anfon cod arall.",
+  "resend": {
+    "1": "Efallai y bydd yn cymryd ychydig funudau iddo gyrraedd eich mewnflwch. Cofiwch wirio eich ffolder junk. Os nad yw'r e-bost yno, ",
+    "linkText": " gallwn anfon cod arall.",
+    "linkTag": "rhif-diogelwch",
+    "confirmMsg": "Rydym wedi anfon rhif diogelwch 6 digid newydd i'ch e-bost"
+  }
+}

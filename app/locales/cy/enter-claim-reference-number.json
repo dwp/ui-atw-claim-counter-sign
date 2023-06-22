@@ -1,0 +1,18 @@
+{
+  "pageTitle": "Rhowch rif cyfeirnod y cais",
+  "h1": "Rhowch rif cyfeirnod y cais",
+  "p1": "Gallwch ddod o hyd i'r rhif yn yr e-bost a anfonom atoch yn gofyn i chi adolygu'r cais.",
+  "hint": "Er enghraifft, SW1002345",
+  "validation": {
+    "prefix": "Mae'n rhaid i rif cyfeirnod y cais ddechrau gydag unai SW neu TW",
+    "required": "Rhowch rif cyfeirnod y cais",
+    "tooLong": "Mae'n rhaid i rif cyfeirnod y cais ond cynnwys 8 rhif",
+    "invalid": "Rhowch rif cyfeirnod y cais yn y ffurf cywir",
+    "notFound": {
+      "p1": "Rhowch rif cyfeirnod y cais dilys",
+      "p2": "Rhowch rif cyfeirnod y cais dilys - rhowch gynnig arall"
+    },
+    "specialCharacter": "Rhowch rif cyfeirnod y cais yn y ffurf cywir"
+  },
+  "link": "Nid oes gennyf rif cyfeirnod y cais"
+}
