@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.15.0 - (2023-07-11)
+* Updating node version to 18.16.1
+* Updating cron schedule to run pipeline
+* component tests set to manual for feature branch
+* Dependancy updates
+* Fragment updates
+
 ## 1.14.0 - (2023-06-20)
 * Open source added to repo
 * Enabled welsh language toggle by default
