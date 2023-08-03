@@ -1,7 +1,7 @@
 const { trimPostalAddressObject } = require('@dwp/govuk-casa').gatherModifiers;
 const fieldValidators = require('../../field-validators/common/enter-address-of-company');
 
-const sourceAddressWP = 'enter-address-of-company';
+const sourceAddressWP = 'enter-company-address';
 const hiddenAddressWP = '__hidden_address__';
 
 // eslint-disable-next-line func-names

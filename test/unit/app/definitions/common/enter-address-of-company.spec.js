@@ -193,7 +193,7 @@ describe('definitions/pages/common/enter-address-of-company', () => {
         expect(getDataForPageStub)
           .to
           .be
-          .calledOnceWithExactly('enter-address-of-company');
+          .calledOnceWithExactly('enter-company-address');
 
         expect(setDataForPageStub)
           .to

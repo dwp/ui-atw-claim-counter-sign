@@ -2,21 +2,21 @@
 const { wasSkipped } = require('../../../helpers/journey-helpers');
 
 const addressLookup = (plan) => {
-  plan.setRoute('company-organisation-name', 'postcode-of-company');
-  plan.setRoute('postcode-of-company', 'search-for-address-of-company');
+  plan.setRoute('company-organisation-name', 'company-postcode');
+  plan.setRoute('company-postcode', 'company-address-search');
 
   plan.setRoute(
-    'search-for-address-of-company',
-    'enter-address-of-company',
-    wasSkipped('search-for-address-of-company'),
+    'company-address-search',
+    'enter-company-address',
+    wasSkipped('company-address-search'),
   );
 
   plan.setRoute(
-    'search-for-address-of-company',
+    'company-address-search',
     'job-title',
-    (r, c) => !wasSkipped('search-for-address-of-company')(r, c),
+    (r, c) => !wasSkipped('company-address-search')(r, c),
   );
-  plan.setRoute('enter-address-of-company', 'job-title');
+  plan.setRoute('enter-company-address', 'job-title');
 };
 
 module.exports = (plan) => addressLookup(plan);

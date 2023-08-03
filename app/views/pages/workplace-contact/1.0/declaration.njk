@@ -19,9 +19,9 @@
         </ul>
     {% elif typeOfClaim === 'TW' %}
          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-            <li class="govuk-body">{{ t('declaration:ul-tw.li1') }}</li>
-            <li class="govuk-body">{{ t('declaration:ul-tw.li2') }}</li>
-            <li class="govuk-body">{{ t('declaration:ul-tw.li3') }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tw.li1', employeeName) }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tw.li2', employeeName) }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tw.li3', employeeName) }}</li>
         </ul>
     {% endif %}
 

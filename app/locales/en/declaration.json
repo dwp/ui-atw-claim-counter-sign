@@ -1,16 +1,16 @@
 {
   "pageTitle": "Declaration",
   "h1": "Declaration",
-  "p1": "By sending this claim, you agree that:",
+  "p1": "By confirming this claim, you agree that:",
   "ul-sw": {
     "li1": "%s received support on the days they are claiming for",
     "li2": "%s is only claiming for support they received in the last 9 months",
-    "li3": "Access to Work can contact you if we need more information to process %s's claim"
+    "li3": "we can contact you if we require more information to process %s's claim"
   },
   "ul-tw": {
-    "li1": "your employee travelled to work on the days they’re claiming for",
-    "li2": "your employee is only claiming for journeys made in the last 9 months",
-    "li3": "Access to Work can contact you if they require more information to process your employee’s claim"
+    "li1": "%s travelled to work on the days they are claiming for",
+    "li2": "%s is only claiming for journeys made in the last 9 months",
+    "li3": "we can contact you if we require more information to process %s's claim"
   },
-  "link": "I agree - send this claim"
+  "link": "Agree and confirm"
 }

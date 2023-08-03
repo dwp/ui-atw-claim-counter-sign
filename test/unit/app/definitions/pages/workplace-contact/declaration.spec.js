@@ -151,7 +151,7 @@ describe('definitions/pages/workplace-contact/declaration', () => {
         expect(redirectStub)
           .to
           .be
-          .calledOnceWithExactly('/review-claim/workplace-contact/claim-confirmed');
+          .calledOnceWithExactly('/review-claim/confirmer/claim-confirmed');
       });
 
       it('should check if response status:200 error', async () => {

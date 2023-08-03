@@ -21,10 +21,10 @@ const workplaceContact = (plan) => {
   plan.setRoute('claim-summary', 'declaration', isYes('correctClaim', 'claim-summary'));
   plan.setRoute('claim-summary', 'claim-incorrect', isNo('correctClaim', 'claim-summary'));
 
-  plan.setRoute('claim-incorrect', 'request-changes-to-claim');
-  plan.setRoute('request-changes-to-claim', 'claim-returned');
+  plan.setRoute('claim-incorrect', 'request-claim-changes');
+  plan.setRoute('request-claim-changes', 'claim-returned');
 
-  plan.addOrigin('workplace-contact', 'about-claim');
+  plan.addOrigin('confirmer', 'about-claim');
 };
 
 module.exports = workplaceContact;

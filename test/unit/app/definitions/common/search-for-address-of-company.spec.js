@@ -65,7 +65,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             journeyContext: {
               // setDataForPage: setDataForPageStub,
               getDataForPage: (pageName) => {
-                if (pageName === 'postcode-of-company') {
+                if (pageName === 'company-postcode') {
                   return {
                     postcode: 'NE26 4RS',
                     addresses: [
@@ -77,7 +77,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
                     ],
                   };
                 }
-                if (pageName === 'search-for-address-of-company') {
+                if (pageName === 'company-address-search') {
                   return {
                     uprn: '7654321',
                   };
@@ -118,14 +118,14 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             .to
             .deep
             .equal(
-              'postcode-of-company#f-postcode',
+              'company-postcode#f-postcode',
             );
 
           expect(res.locals.manualAddressUrl)
             .to
             .deep
             .equal(
-              '?skipto=enter-address-of-company',
+              '?skipto=enter-company-address',
             );
 
           expect(res.locals.companyName)
@@ -166,7 +166,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             journeyContext: {
               setValidationErrorsForPage: setValidationErrorsForPageStub,
               getDataForPage: (pageName) => {
-                if (pageName === 'postcode-of-company') {
+                if (pageName === 'company-postcode') {
                   return {
                     postcode: 'NE26 4RS',
                     addresses: [
@@ -178,7 +178,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
                     ],
                   };
                 }
-                if (pageName === 'search-for-address-of-company') {
+                if (pageName === 'company-address-search') {
                   return {
                     uprn: '7654321',
                   };
@@ -224,14 +224,14 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             .to
             .deep
             .equal(
-              'postcode-of-company?edit=&editorigin=test-origin#f-postcode',
+              'company-postcode?edit=&editorigin=test-origin#f-postcode',
             );
 
           expect(res.locals.manualAddressUrl)
             .to
             .deep
             .equal(
-              '?skipto=enter-address-of-company&edit=&editorigin=test-origin',
+              '?skipto=enter-company-address&edit=&editorigin=test-origin',
             );
 
           expect(res.locals.companyName)
@@ -265,12 +265,12 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
           req.casa = {
             journeyContext: {
               getDataForPage: (pageName) => {
-                if (pageName === 'postcode-of-company') {
+                if (pageName === 'company-postcode') {
                   return {
                     postcode: 'NE26 4RS',
                   };
                 }
-                if (pageName === 'search-for-address-of-company') {
+                if (pageName === 'company-address-search') {
                   return {
                     uprn: '7654321',
                   };
@@ -306,14 +306,14 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             .to
             .deep
             .equal(
-              'postcode-of-company#f-postcode',
+              'company-postcode#f-postcode',
             );
 
           expect(res.locals.manualAddressUrl)
             .to
             .deep
             .equal(
-              '?skipto=enter-address-of-company',
+              '?skipto=enter-company-address',
             );
 
           expect(res.locals.companyName)
@@ -345,10 +345,10 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
           const nextStub = sinon.stub();
 
           req.casa = {
-            journeyWaypointId: 'search-for-address-of-company',
+            journeyWaypointId: 'company-address-search',
             journeyContext: {
               getDataForPage: (pageName) => {
-                if (pageName === 'postcode-of-company') {
+                if (pageName === 'company-postcode') {
                   return {
                     postcode: 'NE26 4RS',
                     addresses: [
@@ -365,7 +365,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
                     ],
                   };
                 }
-                if (pageName === 'search-for-address-of-company') {
+                if (pageName === 'company-address-search') {
                   return {
                     uprn: '1234567',
                   };
@@ -411,14 +411,14 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             .to
             .deep
             .equal(
-              'postcode-of-company#f-postcode',
+              'company-postcode#f-postcode',
             );
 
           expect(res.locals.manualAddressUrl)
             .to
             .deep
             .equal(
-              '?skipto=enter-address-of-company',
+              '?skipto=enter-company-address',
             );
 
           expect(res.locals.companyName)
@@ -460,7 +460,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
           journeyContext: {
             setDataForPage: setDataForPageStub,
             getDataForPage: (pageName) => {
-              if (pageName === 'postcode-of-company') {
+              if (pageName === 'company-postcode') {
                 return {
                   postcode: 'NE26 4RS',
                   addresses: [
@@ -472,7 +472,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
                   ],
                 };
               }
-              if (pageName === 'search-for-address-of-company') {
+              if (pageName === 'company-address-search') {
                 return {
                   uprn: '1234567',
                 };
@@ -526,7 +526,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
           journeyContext: {
             setDataForPage: setDataForPageStub,
             getDataForPage: (pageName) => {
-              if (pageName === 'postcode-of-company') {
+              if (pageName === 'company-postcode') {
                 return {
                   postcode: 'AA9A 9AA',
                   addresses: [
@@ -538,7 +538,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
                   ],
                 };
               }
-              if (pageName === 'search-for-address-of-company') {
+              if (pageName === 'company-address-search') {
                 return {
                   uprn: '1234567',
                 };
@@ -594,7 +594,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
             journeyContext: {
               setDataForPage: setDataForPageStub,
               getDataForPage: (pageName) => {
-                if (pageName === 'postcode-of-company') {
+                if (pageName === 'company-postcode') {
                   return {
                     postcode: 'E2 4RS',
                     addresses: [
@@ -606,7 +606,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
                     ],
                   };
                 }
-                if (pageName === 'search-for-address-of-company') {
+                if (pageName === 'company-address-search') {
                   return {
                     uprn: '1234567',
                   };
@@ -662,12 +662,12 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
           journeyContext: {
             setDataForPage: setDataForPageStub,
             getDataForPage: (pageName) => {
-              if (pageName === 'postcode-of-company') {
+              if (pageName === 'company-postcode') {
                 return {
                   postcode: 'NE26 4RS',
                 };
               }
-              if (pageName === 'search-for-address-of-company') {
+              if (pageName === 'company-address-search') {
                 return {
                   uprn: '1234567',
                 };
@@ -699,7 +699,7 @@ describe('definitions/pages/common/search-for-address-of-company', () => {
         journeyContext: {
           setDataForPage: setDataForPageStub,
           getDataForPage: (pageName) => {
-            if (pageName === 'postcode-of-company') {
+            if (pageName === 'company-postcode') {
               return {
                 postcode: 'NE26 4RS',
                 addresses: [

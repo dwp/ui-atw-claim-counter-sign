@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.16.0 - (2023-08-02)
+* Changes to declaration and claim confirmed pages
+* Change to URLs from 'workplace-contact' to 'confirmer'
+* Removed aria-required from some radio buttons for accessibility
+* Content changes to declaration page
+* Update for feedback links to go direct to form
+* Dockerfile updates for curl versions
+* Fragment updates
+
 ## 1.15.0 - (2023-07-11)
 * Updating node version to 18.16.1
 * Updating cron schedule to run pipeline

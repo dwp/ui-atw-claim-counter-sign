@@ -166,12 +166,12 @@ describe('definitions/pages/common/postcode-of-company', () => {
           expect(redirectStub)
             .to
             .be
-            .calledOnceWithExactly('search-for-address-of-company?edit=&editorigin=test-origin');
+            .calledOnceWithExactly('company-address-search?edit=&editorigin=test-origin');
 
           sinon.assert.calledTwice(setDataForPageStub);
-          sinon.assert.calledWith(setDataForPageStub.firstCall, 'search-for-address-of-company',
+          sinon.assert.calledWith(setDataForPageStub.firstCall, 'company-address-search',
             undefined);
-          sinon.assert.calledWith(setDataForPageStub.secondCall, 'enter-address-of-company',
+          sinon.assert.calledWith(setDataForPageStub.secondCall, 'enter-company-address',
             undefined);
         });
 
@@ -269,7 +269,7 @@ describe('definitions/pages/common/postcode-of-company', () => {
           expect(setDataForPageStub)
             .to
             .be
-            .calledOnceWithExactly('postcode-of-company', { postcode: 'NE26 4RS' });
+            .calledOnceWithExactly('company-postcode', { postcode: 'NE26 4RS' });
 
           expect(nextStub)
             .to

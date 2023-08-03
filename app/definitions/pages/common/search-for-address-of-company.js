@@ -5,9 +5,9 @@ const log = logger('definitions:pages.common.search-for-address-of-company');
 
 const addressLinePostcode = /, ?[A-Z0-9]{2,4} [0-9][A-Z]{2}$/i;
 
-const postcodeWP = 'postcode-of-company';
-const manualEntryWP = 'enter-address-of-company';
-const sourceAddressWP = 'search-for-address-of-company';
+const postcodeWP = 'company-postcode';
+const manualEntryWP = 'enter-company-address';
+const sourceAddressWP = 'company-address-search';
 const hiddenAddressWP = '__hidden_address__';
 
 // eslint-disable-next-line func-names

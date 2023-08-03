@@ -30,8 +30,8 @@ module.exports = () => ({
       if (req.inEditMode) {
         log.debug('inEditMode preredirect');
 
-        req.casa.journeyContext.setDataForPage('search-for-address-of-company', undefined);
-        req.casa.journeyContext.setDataForPage('enter-address-of-company', undefined);
+        req.casa.journeyContext.setDataForPage('company-address-search', undefined);
+        req.casa.journeyContext.setDataForPage('enter-company-address', undefined);
         req.casa.journeyContext.setValidationErrorsForPage('check-your-answers', undefined);
 
         req.session.save((err) => {
@@ -39,7 +39,7 @@ module.exports = () => ({
             throw err;
           }
           return res.redirect(
-            `search-for-address-of-company?edit=&editorigin=${req.editOriginUrl}`,
+            `company-address-search?edit=&editorigin=${req.editOriginUrl}`,
           );
         });
       } else {
@@ -53,7 +53,7 @@ module.exports = () => ({
         const { postcode } = req.casa.journeyContext.getDataForPage(
           '__hidden_address__',
         ).addressDetails;
-        req.casa.journeyContext.setDataForPage('postcode-of-company', { postcode });
+        req.casa.journeyContext.setDataForPage('company-postcode', { postcode });
       }
       res.locals.BUTTON_TEXT = res.locals.t(`${'postcode-of-company'}:findAddressButton`);
       res

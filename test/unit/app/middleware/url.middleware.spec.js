@@ -33,13 +33,12 @@ describe('Middleware: url', () => {
       .instanceOf(Function);
   });
 
-  it('Should set correct url for feedbackUrl', () => {
-    res.locals.currentUrl = 'someUrl';
+  it('Should set correct url for feedbackFormDirectUrl', () => {
     middleware(app);
     app.use(req, res, nextStub);
-    expect(res.locals.feedbackUrl)
+    expect(res.locals.feedbackFormDirectUrl)
       .to
-      .eql('/review-claim/feedback?referrer=someUrl');
+      .eql('https://forms.office.com/e/tCthQ5vywn');
   });
 
 });

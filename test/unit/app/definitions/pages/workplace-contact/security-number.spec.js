@@ -471,7 +471,7 @@ describe('definitions/pages/workplace-contact/security-number', () => {
         expect(redirectStub)
           .to
           .be
-          .calledOnceWithExactly('/review-claim/workplace-contact/about-claim');
+          .calledOnceWithExactly('/review-claim/confirmer/about-claim');
 
         expect(req.session.AUTH_STATE)
           .to

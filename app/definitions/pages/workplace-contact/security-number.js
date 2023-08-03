@@ -119,7 +119,7 @@ module.exports = () => ({
         req.session.wrongNumberErrorCount = 0;
       } else if (counter >= 3) {
         req.casa.journeyContext.clearValidationErrorsForPage('security-number');
-        return req.session.save(() => res.redirect('incorrect-code'));
+        return req.session.save(() => res.redirect('incorrect-number'));
       }
 
       if (req.query.m !== undefined && res.locals.errorPage !== true) {

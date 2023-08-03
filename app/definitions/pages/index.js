@@ -1,9 +1,9 @@
 /* eslint-disable global-require */
 module.exports = () => {
   const commonPages = {
-    'postcode-of-company': require('./common/postcode-of-company')(),
-    'search-for-address-of-company': require('./common/search-for-address-of-company')(),
-    'enter-address-of-company': require('./common/enter-address-of-company')(),
+    'company-postcode': require('./common/postcode-of-company')(),
+    'company-address-search': require('./common/search-for-address-of-company')(),
+    'enter-company-address': require('./common/enter-address-of-company')(),
     'check-your-answers': require('./common/check-your-answers')(),
   };
 
@@ -13,7 +13,7 @@ module.exports = () => {
       './workplace-contact/confirm-claim-reference-number',
     )(),
     'security-number': require('./workplace-contact/security-number')(),
-    'incorrect-code': require('./workplace-contact/incorrect-code')(),
+    'incorrect-number': require('./workplace-contact/incorrect-code')(),
   };
 
   const workplaceContactJourney = {
@@ -25,7 +25,7 @@ module.exports = () => {
     'claim-summary': require('./workplace-contact/claim-summary')(),
     declaration: require('./workplace-contact/declaration')(),
     'claim-incorrect': require('./workplace-contact/claim-incorrect')(),
-    'request-changes-to-claim': require('./workplace-contact/request-changes-to-claim')(),
+    'request-claim-changes': require('./workplace-contact/request-changes-to-claim')(),
   };
 
   commonPages['check-your-answers'] = require('./common/check-your-answers')(

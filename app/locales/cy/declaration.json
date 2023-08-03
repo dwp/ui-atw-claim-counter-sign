@@ -1,7 +1,7 @@
 {
   "pageTitle": "Datganiad",
   "h1": "Datganiad",
-  "p1": "Drwy anfon y cais hwn, rwy'n cadarnhau:",
+  "p1": "Drwy gadarnhau'r cais hwn, rydych yn cytuno:",
   "ul-sw": {
     "li1": "derbyniodd %s gymorth ar y dyddiau maent yn gwneud cais amdanynt",
     "li2": "mae %s ond yn gwneud cais am gymorth maent wedi ei gael yn y 9 mis diwethaf",
@@ -10,7 +10,7 @@
   "ul-tw": {
     "li1": "teithiodd eich gweithiwr i'r gwaith ar y dyddiau maent yn gwneud cais amdanynt",
     "li2": "mae eich gweithiwr ond yn gwneud cais am deithiau sydd wedi cael eu gwneud yn y 9 mis diwethaf",
-    "li3": "gall Mynediad at Waith gysylltu â chi os byddant angen mwy o wybodaeth i brosesu cais eich gweithiwr"
+    "li3": "gallwn gysylltu â chi os byddwn angen mwy o wybodaeth i brosesu cais eich gweithiwr"
   },
   "link": "Rwyf yn cytuno - anfon y cais hwn"
 }

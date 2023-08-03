@@ -17,11 +17,11 @@ const workplaceContact = (plan) => {
 
   plan.setRoute(
     'security-number',
-    'incorrect-code',
+    'incorrect-number',
   );
 
   plan.setRoute(
-    'incorrect-code',
+    'incorrect-number',
     'enter-claim-reference-number',
   );
 

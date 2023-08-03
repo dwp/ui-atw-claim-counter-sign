@@ -15,13 +15,12 @@
 
     <p class="govuk-body">{{ t('claim-confirmed:whatNext.p1', employeeName) }}</p>
     <p class="govuk-body">{{ t('claim-confirmed:whatNext.p2', employeeName) }}</p>
-    <p class="govuk-body">{{ t('claim-confirmed:whatNext.p3', employeeName) }}</p>
 
     <p class="govuk-body">
         <a href="{{ casa.mountUrl }}">{{ t('common:signOut') }}</a>
     </p>
     <p class="govuk-body">
-        <a href={{ feedbackUrl }}>{{ t('claim-confirmed:feedback.link') }}</a>
+        <a href={{ feedbackFormDirectUrl }}>{{ t('claim-confirmed:feedback.link') }}</a>
     </p>
 
 {% endblock %}

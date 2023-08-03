@@ -1,4 +1,3 @@
-const { mountURL } = require('../config/config-mapping');
 const logger = require('../logger/logger');
 
 const log = logger('middleware:journey-type');
@@ -10,7 +9,7 @@ module.exports = (
   app.use(async (req, res, next) => {
     log.debug('middleware: url.middleware');
 
-    res.locals.feedbackUrl = `${mountURL}feedback?referrer=${res.locals.currentUrl}`;
+    res.locals.feedbackFormDirectUrl = `https://forms.office.com/e/tCthQ5vywn`;
     next();
   });
 };
