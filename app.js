@@ -185,6 +185,7 @@ const casaApp = configure(app, {
     dirs: [
       path.resolve(__dirname, './app/views'),
       path.resolve(__dirname, 'node_modules/hmrc-frontend'),
+      path.resolve(__dirname, 'node_modules/nhsuk-frontend/packages/components'),
     ],
   },
   compiledAssetsDir: path.resolve(__dirname, './static/'),

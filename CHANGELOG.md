@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.17.0 - (2024-02-12)
+* New card summary style for summary tables added
+* Data model changes for new updates to SW journey
+* project-metadata.yml updated
+* pipeline updates adding retry: 2 for create-project-badges
+* Dockerfile updates for curl versions
+
 ## 1.16.0 - (2023-08-02)
 * Changes to declaration and claim confirmed pages
 * Change to URLs from 'workplace-contact' to 'confirmer'

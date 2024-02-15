@@ -80,14 +80,16 @@ const dataResponse = {
             timeOfSupport: {
               hoursOfSupport: '2',
               minutesOfSupport: '30',
-            },            nameOfSupport: 'person 1',
+            },            
+            nameOfSupport: 'person 1',
           },
           {
             dayOfSupport: '2',
             timeOfSupport: {
               hoursOfSupport: '3',
               minutesOfSupport: '20',
-            },            nameOfSupport: 'Person 2',
+            },            
+            nameOfSupport: 'Person 2',
           },
         ],
       },
@@ -102,14 +104,16 @@ const dataResponse = {
             timeOfSupport: {
               hoursOfSupport: '12',
               minutesOfSupport: '15',
-            },            nameOfSupport: null,
+            },            
+            nameOfSupport: null,
           },
           {
             dayOfSupport: '14',
             timeOfSupport: {
               hoursOfSupport: '12',
               minutesOfSupport: '40',
-            },            nameOfSupport: 'Person 4',
+            },            
+            nameOfSupport: 'Person 4',
           },
         ],
       },

@@ -86,7 +86,8 @@ const dataResponse = {
             timeOfSupport: {
               hoursOfSupport: '3',
               minutesOfSupport: '20',
-            },            nameOfSupport: 'Person 2',
+            },            
+            nameOfSupport: 'Person 2',
           },
         ],
       },
@@ -101,7 +102,8 @@ const dataResponse = {
             timeOfSupport: {
               hoursOfSupport: '12',
               minutesOfSupport: '15',
-            },            nameOfSupport: null,
+            },            
+            nameOfSupport: null,
           },
           {
             dayOfSupport: '14',
