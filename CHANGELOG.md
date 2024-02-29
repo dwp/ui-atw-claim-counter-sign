@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.18.0 - (2024-02-28)
+* Update fragments
+* Update packages
+* Crown logo change to tudor crown
+
 ## 1.17.0 - (2024-02-12)
 * New card summary style for summary tables added
 * Data model changes for new updates to SW journey
