@@ -1,8 +1,6 @@
 {
   "pageTitle": "Claim confirmed",
   "h1": "Claim confirmed",
-  "reference": "Your employee's claim reference number",
-  "p1": "You should give us this claim reference number if you contact us about your claim.",
   "whatNext": {
     "h2": "What happens next",
     "p1": "If we approve %s’s claim, we’ll pay the money into the bank account they chose.",

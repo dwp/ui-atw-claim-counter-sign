@@ -12,7 +12,7 @@ chai.use(require('sinon-chai'));
 const Request = require('../../../../../helpers/fakeRequest');
 const Response = require('../../../../../helpers/fakeResponse');
 
-describe('definitions/pages/workplace-contact/incorrect-claim', () => {
+describe('definitions/pages/workplace-contact/job-title', () => {
   it('should page a function', () => {
     assert.typeOf(page, 'function');
   });

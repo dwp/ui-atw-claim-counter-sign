@@ -22,10 +22,5 @@
       "col1": "Type of claim"
     }
   },
-  "h2-2": "Do you want to review this claim?",
-  "radioYes": "Yes",
-  "radioNo": "No",
-  "validation": {
-    "required": "Select yes if you want to review this claim"
-  }
+  "insetText": "If you want to review a different claim, you need to <a class=\"govuk-link\" href=\"${url}\">enter a different claim reference number</a>"
 }

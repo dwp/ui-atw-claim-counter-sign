@@ -171,7 +171,7 @@ describe('definitions/pages/workplace-contact/enter-claim-reference-number', () 
           .includes('pregather');
       });
 
-      it('should check if claim number exists', async () => {
+      it('should check if claim number exists - sw', async () => {
         expect(Object.keys(this.result))
           .to
           .includes('hooks');
@@ -192,6 +192,29 @@ describe('definitions/pages/workplace-contact/enter-claim-reference-number', () 
         expect(req.body.claimReference)
           .to
           .equal('SW1');
+      });
+
+      it('should check if claim number exists - tiw', async () => {
+        expect(Object.keys(this.result))
+          .to
+          .includes('hooks');
+        expect(Object.keys(this.result.hooks))
+          .to
+          .includes('pregather');
+
+        const req = new Request();
+        const res = new Response(req);
+        const nextStub = sinon.stub();
+
+        req.body = {
+          claimReference: 'tiw1',
+        };
+
+        await this.result.hooks.pregather(req, res, nextStub);
+
+        expect(req.body.claimReference)
+          .to
+          .equal('TIW1');
       });
     });
 

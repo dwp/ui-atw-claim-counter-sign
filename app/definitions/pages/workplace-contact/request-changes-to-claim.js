@@ -3,6 +3,7 @@ const fieldValidators = require('../../field-validators/common/optional-validato
 const {
   claimTypesToDisplayText,
   claimTypes,
+  claimTypesSetKey
 } = require('../../../config/claim-types');
 const logger = require('../../../logger/logger');
 const config = require('../../../config/config-mapping');
@@ -46,8 +47,13 @@ module.exports = () => ({
         claimType,
         createdDate,
       } = req.casa.journeyContext.getDataForPage('__hidden_user_claim__');
-      res.locals.claimReference = `${claimTypes[claimType]}${claimNumber.toString()
-        .padStart(8, '0')}`;
+      if (claimType === claimTypesSetKey.TIW) {
+        res.locals.claimReference = `${claimTypes[claimType]}${claimNumber.toString()
+          .padStart(7, '0')}`;
+      } else {
+        res.locals.claimReference = `${claimTypes[claimType]}${claimNumber.toString()
+          .padStart(8, '0')}`;
+      }
       res.locals.typeOfClaim = claimTypesToDisplayText[claimType];
       res.locals.createdDate = createdDate;
       res.locals.claimIncorrect = req.casa.journeyContext.getDataForPage(

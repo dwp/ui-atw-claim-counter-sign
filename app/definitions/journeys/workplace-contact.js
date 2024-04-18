@@ -6,10 +6,7 @@ const {
 const addressLookup = require('./common/address-lookup');
 
 const workplaceContact = (plan) => {
-  plan.setRoute('about-claim', 'what-you-will-need', isYes('reviewClaim', 'about-claim'));
-  plan.setRoute('about-claim', 'incorrect-claim', isNo('reviewClaim', 'about-claim'));
-
-  plan.setRoute('incorrect-claim', 'enter-claim-reference-number');
+  plan.setRoute('about-claim', 'what-you-will-need');
 
   plan.setRoute('what-you-will-need', 'company-organisation-name');
 

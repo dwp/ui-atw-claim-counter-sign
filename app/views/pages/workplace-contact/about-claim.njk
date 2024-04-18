@@ -2,6 +2,7 @@
 {% from "govuk/components/summary-list/macro.njk" import "govukSummaryList" with context %}
 {% from "casa/components/radios/macro.njk" import casaGovukRadios with context %}
 {% from "casa/components/input/macro.njk" import casaGovukInput with context %}
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
 
 {% extends "layouts/journey.njk" %}
 
@@ -49,29 +50,11 @@
         </div>
     </dl>
 
-    {{ casaGovukRadios({
-        classes: "govuk-radios--inline",
-        idPrefix: "reviewClaim",
-        name: "reviewClaim",
-        casaValue: formData.reviewClaim,
-        casaErrors: formErrors,
-        fieldset: {
-            legend: {
-                text: t('about-claim:h2-2'),
-                isPageHeading: false,
-                classes: "govuk-fieldset__legend--m"
-            }
-        },
-        items: [
-            {
-                value: "yes",
-                text: t('about-claim:radioYes')
-            },
-            {
-                value: "no",
-                text: t('about-claim:radioNo')
-            }
-        ]
-    }) }}
+    {% set insetText %}
+        <p class="govuk-body">{{ t('about-claim:insetText', { url: casa.mountUrl }) | safe }}</p>
+    {% endset -%}
 
+    {{ govukInsetText({
+        html: insetText | safe
+    }) }}
 {% endblock %}

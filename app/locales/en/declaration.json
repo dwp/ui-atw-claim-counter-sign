@@ -12,5 +12,10 @@
     "li2": "%s is only claiming for journeys made in the last 9 months",
     "li3": "we can contact you if we require more information to process %s's claim"
   },
+  "ul-tiw": {
+    "li1": "your employee travelled during work on the days they’re claiming for",
+    "li2": "your employee is only claiming for journeys made in the last 9 months",
+    "li3": "we can contact you if we require more information to process your employee’s claim"
+  },
   "link": "Agree and confirm"
 }

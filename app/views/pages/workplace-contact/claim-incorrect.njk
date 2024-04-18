@@ -15,11 +15,14 @@
 
     {% if typeOfClaim === 'SW' %}
         <p class="govuk-body">{{ t('claim-incorrect:sw.p1', employeeName) }}</p>
+        <p class="govuk-body">{{ t('claim-incorrect:p2', employeeName) }}</p>
     {% elif typeOfClaim === 'TW' %}
         <p class="govuk-body">{{ t('claim-incorrect:tw.p1', employeeName) }}</p>
+        <p class="govuk-body">{{ t('claim-incorrect:p2', employeeName) }}</p>
+    {% elif typeOfClaim === 'TIW' %}
+        <p class="govuk-body">{{ t('claim-incorrect:tiw.p1') }}</p>
+        <p class="govuk-body">{{ t('claim-incorrect:tiw.p2', employeeName) }}</p>
     {% endif %}
-
-    <p class="govuk-body">{{ t('claim-incorrect:p2', employeeName) }}</p>
 
     {{ govukCharacterCount({
         id: "f-claimIncorrect",

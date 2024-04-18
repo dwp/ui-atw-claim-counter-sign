@@ -2,19 +2,23 @@
   "pageTitle": "%s Travel for work claim",
   "h1": {
     "sw": "%s Support worker claim",
-    "tw": "%s Travel for work claim"
+    "tw": "%s Travel for work claim",
+    "tiw": "%s Travel during work claim"
   },
   "h1-ga": {
     "sw": "Employee's support worker claim",
-    "tw": "Employee's travel for work claim"
+    "tw": "Employee's travel for work claim",
+    "tiw": "Employee's travel during work claim"
   },
   "p1": {
     "sw": "You need to check the days %s is claiming support for and the number of hours they are claiming for each day.",
-    "tw": "You need to check the days %s is claiming travel to or from work costs. We’ll also ask you to confirm whether your employee was in work on the days they’re claiming for."
+    "tw": "You need to check the days %s is claiming travel to or from work costs. We’ll also ask you to confirm whether your employee was in work on the days they’re claiming for.",
+    "tiw": "You need to check the days %s is claiming travel in work costs. We’ll also ask you to confirm whether your employee was in work on the days they’re claiming for."
   },
   "p2": {
     "sw": "We’ll then ask you to confirm %s claim or tell us why you cannot confirm their claim.",
-    "tw": "We’ll then ask you to confirm their claim, or tell us why you disagree with their claim."
+    "tw": "We’ll then ask you to confirm their claim, or tell us why you disagree with their claim.",
+    "tiw": "We’ll then ask you to confirm their claim, or tell us why you disagree with their claim."
   },
   "h2-2": "Claim information",
   "h2-3": "Do you confirm this claim is correct?",

@@ -25,6 +25,12 @@
         <p class="govuk-body">{{ t('claim-summary:p1.tw', employeeName) }}</p>
         <p class="govuk-body">{{ t('claim-summary:p2.tw', employeeName) }}</p>
         <h2 class="govuk-heading-m">{{ t('claim-summary:h2-2') }}</h2>
+        {% elif typeOfClaim === 'TIW' %}
+        <h1 class="govuk-heading-l hide-print" data-ga-question="{{ t('claim-summary:h1-ga.tw') }}">
+            {{ t('claim-summary:h1.tiw', employeeName) }}</h1>
+        <p class="govuk-body">{{ t('claim-summary:p1.tiw', employeeName) }}</p>
+        <p class="govuk-body">{{ t('claim-summary:p2.tiw', employeeName) }}</p>
+        <h2 class="govuk-heading-m">{{ t('claim-summary:h2-2') }}</h2>
     {% endif %}
     {# START - Claim information section #}
     {% if typeOfClaim === 'SW' %}
@@ -250,7 +256,84 @@
                 </div>
             {% endif %}
         </dl>
+    {% elif typeOfClaim === 'TIW' %}
+        {% set typeOfTravel = claimData.travelDetails.howDidYouTravelDuringWork %}
+        {% set files = claimData.evidence %}
+        {% set claim = claimData.claim %}
+        {% set totalMiles = claimData.totalMileage %}
+        {% set totalCost = claimData.cost %}
+        {% set monthLength = claim | length %}
+        {% set rowsArrayMonthlyTravel = [] %}
+        {% set rowsArrayTravelDetails = [] %}
+        {% set journeyLengthTotal = 0 %}
+
+        {% for monthIndex, month in claim %}
+            {% set journeyLengthMonth = month['claim'] | length %}
+            {% set rowsArrayMonthlyTravel = ( rowsArrayMonthlyTravel.push(
+                {
+                key: {
+                    text: month['monthYear'] | formatMonthYearObject(t)
+                },
+                value: { html: (journeyLengthMonth | safe) + t('travel-during-work-claim-information:reviewBlock.journey') }
+                        if ( journeyLengthMonth === 1 )
+                        else { html: (journeyLengthMonth | safe) + t('travel-during-work-claim-information:reviewBlock.journeys') }
+            }), rowsArrayMonthlyTravel) %}
+            {% set journeyLengthTotal = journeyLengthTotal + journeyLengthMonth %}
+        {% endfor %}
+
+        {{ customSummaryCardTable({
+                card: {
+                    title: {
+                    text:  t('travel-during-work-claim-information:reviewBlock.monthlyTravel')
+                    }
+                },
+                rows: rowsArrayMonthlyTravel
+        }) }}
+
+        {% set filesBlock %}
+            {% for f in files %}
+                {% if f %}
+                    {{ f['fileName'] }}
+                {% endif %}
+            {% endfor %}
+        {% endset -%}
+
+        {% set rowsArrayTravelDetails = ( rowsArrayTravelDetails.push(
+            {
+                key: {
+                    text: t('travel-during-work-claim-information:reviewBlock.totalJourneys')
+                },
+                value: { html: (journeyLengthTotal | safe) }
+            },
+            {
+                key: {
+                    text: t('travel-during-work-claim-information:reviewBlock.totalJourneyMiles')
+                },
+                value: { html: (totalMiles | safe) }
+            },
+            {
+                key: {
+                    text: t('travel-during-work-claim-information:reviewBlock.totalJourneyCost')
+                },
+                value: { html: ('£' + totalCost | safe) }
+            },
+            {
+                key: {
+                    text: t('travel-during-work-claim-information:reviewBlock.files')
+                },
+                value: { html: (filesBlock | safe) }
+        }), rowsArrayTravelDetails) %}
+
+            {{ customSummaryCardTable({
+                card: {
+                    title: {
+                    text:  t('travel-during-work-claim-information:reviewBlock.travelDetails')
+                    }
+                },
+                rows: rowsArrayTravelDetails
+            }) }}
     {% endif %}
+
     {# END - Claim information section #}
     {{ casaGovukRadios({
         classes: "govuk-radios--inline",

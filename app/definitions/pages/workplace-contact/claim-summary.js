@@ -1,6 +1,7 @@
 const fieldValidators = require('../../field-validators/claim-summary');
 const {
   claimTypes,
+  claimTypesSetKey
 } = require('../../../config/claim-types');
 
 // eslint-disable-next-line func-names
@@ -19,8 +20,13 @@ module.exports = () => ({
         id: claimNumber,
         claimType,
       } = req.casa.journeyContext.getDataForPage('__hidden_user_claim__');
-      res.locals.claimReference = `${claimTypes[claimType]}${claimNumber.toString()
-        .padStart(8, '0')}`;
+      if (claimType === claimTypesSetKey.TIW) {
+        res.locals.claimReference = `${claimTypes[claimType]}${claimNumber.toString()
+          .padStart(7, '0')}`;
+      } else {
+        res.locals.claimReference = `${claimTypes[claimType]}${claimNumber.toString()
+          .padStart(8, '0')}`;
+      }
       res.locals.typeOfClaim = claimTypes[claimType];
       res.locals.supportWorkerName = req.casa.journeyContext.getDataForPage('__hidden_user_claim__').nameOfSupport;
       res.locals.claimData = req.casa.journeyContext.getDataForPage('__hidden_user_claim__');

@@ -7,6 +7,10 @@
   "tw": {
     "p1": "Er enghraifft, gallai %s fod yn gwneud cais am ormod neu ddim digon o ddyddiau o deithio, neu efallai nad oeddent yn y gwaith am un o'r dyddiau maent yn gwneud cais amdano."
   },
+  "tiw": {
+    "p1": "For example, the number of days of travel are incorrect.",
+    "p2": "Make sure you provide %s with enough information to correct their claim."
+  },
   "p2": "Mae angen i chi sicrhau eich bod yn darparu digon o wybodaeth, fel bod %s yn deall beth sydd angen ei ddiweddaru.",
   "validation": {
     "required": "Rhowch reswm pam na allwch gadarnhau'r cais hwn",

@@ -45,7 +45,7 @@ describe('definitions/pages/workplace-contact/claim-summary', () => {
               .includes('prerender');
         });
 
-        it('should display claim summary details', async () => {
+        it('should display claim summary details - sw', async () => {
           expect(Object.keys(this.result))
               .to
               .includes('hooks');
@@ -127,6 +127,55 @@ describe('definitions/pages/workplace-contact/claim-summary', () => {
 
           assert.equal(res.locals.claimReference, 'SW00000001');
           assert.equal(res.locals.employeeName, 'Fenrir Aland');
+        });
+
+        it('should display claim summary details - tiw', async () => {
+          expect(Object.keys(this.result))
+              .to
+              .includes('hooks');
+          expect(Object.keys(this.result.hooks))
+              .to
+              .includes('prerender');
+
+          const req = new Request();
+          const res = new Response(req);
+
+          req.casa = {
+            journeyContext: {
+              getDataForPage: (page) => {
+                if (page === '__hidden_user_claim__') {
+                  return {
+                    id: 1,
+                    claimType: 'TRAVEL_IN_WORK',
+                    claimant: {
+                      forename: 'Alan',
+                      surname: 'Jones'
+                    },
+                    claim: {
+                      0: {
+                        monthYear: {
+                          mm: '04',
+                          yyyy: '2020',
+                        },
+                        claim: [
+                          {
+                            startPostcode: 'NP12 0QW',
+                            endPostcode: 'LL14 4EX',
+                            cost: '22'
+                          },
+                        ],
+                      },
+                    },
+                  };
+                }
+              },
+            },
+          };
+
+          this.result.hooks.prerender(req, res, sinon.stub());
+
+          assert.equal(res.locals.claimReference, 'TIW0000001');
+          assert.equal(res.locals.employeeName, 'Alan Jones');
         });
 
         it('should display claim summary details of new data model', async () => {

@@ -11,5 +11,9 @@
   "ul-tw": {
     "li1": "your employer and job details",
     "li2": "%s was in work on the days they’re claiming for"
+  },
+  "ul-tiw": {
+    "li1": "your employer and job details",
+    "li2": "%s was in work on the days they’re claiming for"
   }
 }

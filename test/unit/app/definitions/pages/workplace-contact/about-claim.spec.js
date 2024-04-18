@@ -49,7 +49,7 @@ describe('definitions/pages/workplace-contact/about-claim', () => {
         .includes('prerender');
     });
 
-    it('should display claim details', async () => {
+    it('should display claim details - sw', async () => {
       expect(Object.keys(this.result))
         .to
         .includes('hooks');
@@ -85,6 +85,44 @@ describe('definitions/pages/workplace-contact/about-claim', () => {
       assert.equal(res.locals.claimReference, 'SW00000001');
       assert.equal(res.locals.createdDate, '2022-03-12T16:33:16');
       assert.equal(res.locals.employeeName, 'Fenrir Aland');
+    });
+
+    it('should display claim details - tiw', async () => {
+      expect(Object.keys(this.result))
+        .to
+        .includes('hooks');
+      expect(Object.keys(this.result.hooks))
+        .to
+        .includes('prerender');
+
+      const req = new Request();
+      const res = new Response(req);
+
+      res.locals.casa.mountUrl = '/exampleMountUrl';
+      req.casa = {
+        journeyContext: {
+          getDataForPage: (page) => {
+            if (page === '__hidden_user_claim__') {
+              return {
+                id: 1,
+                claimType: 'TRAVEL_IN_WORK',
+                createdDate: '2022-03-12T15:33:16',
+                claimant: {
+                  forename: 'Alan',
+                  surname: 'Jones'
+                },
+              };
+            }
+          },
+        },
+      };
+
+      this.result.hooks.prerender(req, res, sinon.stub());
+
+      assert.equal(res.locals.casa.journeyPreviousUrl, '/exampleMountUrl');
+      assert.equal(res.locals.claimReference, 'TIW0000001');
+      assert.equal(res.locals.createdDate, '2022-03-12T15:33:16');
+      assert.equal(res.locals.employeeName, 'Alan Jones');
     });
   });
 });

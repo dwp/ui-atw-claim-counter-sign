@@ -23,6 +23,12 @@
             <li class="govuk-body">{{ t('declaration:ul-tw.li2', employeeName) }}</li>
             <li class="govuk-body">{{ t('declaration:ul-tw.li3', employeeName) }}</li>
         </ul>
+    {% elif typeOfClaim === 'TIW' %}
+        <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li class="govuk-body">{{ t('declaration:ul-tiw.li1', employeeName) }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tiw.li2', employeeName) }}</li>
+            <li class="govuk-body">{{ t('declaration:ul-tiw.li3', employeeName) }}</li>
+        </ul>
     {% endif %}
 
 {% endblock %}

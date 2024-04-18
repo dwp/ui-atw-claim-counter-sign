@@ -22,10 +22,5 @@
       "col1": "Math o gais"
     }
   },
-  "h2-2": "Ydych chi eisiau adolygu'r cais hwn?",
-  "radioYes": "Ydw",
-  "radioNo": "Na",
-  "validation": {
-    "required": "Dewiswch ydw os ydych chi eisiau adolygu'r cais hwn"
-  }
+  "insetText": "Os ydych angen adolygu cais gwahanol, mae angen i <a class=\"govuk-link\" href=\"${url}\">chi roi rhif cyfeirnod cais gwahanol i mewn</a>"
 }

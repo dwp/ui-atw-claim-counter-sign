@@ -6,7 +6,7 @@ const regex = {
   ROLL_NUMBER_CHARS: /^[\dA-Za-z.\\/ -]*$/,
   CURRENCY: /^(\d{1,8})(\.\d{0,2})?$/,
   CLAIM_TYPE_CHECK: /^[A-Za-z]{2}.*[0-9]+$/i,
-  CLAIM_TYPE_PREFIX_CHECK: /^(TW|SW).*$/i,
+  CLAIM_TYPE_PREFIX_CHECK: /^(TW|SW|TIW).*$/i,
   SPECIAL_CHARACTERS: /^((?![!|@|#|$|%|^|&|*|(|)|,|.|?|"|:|{|}|||<|>]).)*$/,
 };
 

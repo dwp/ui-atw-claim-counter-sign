@@ -11,5 +11,9 @@
   "ul-tw": {
     "li1": "eich cyflogwr a manylion eich swydd",
     "li2": "oedd %s yn y gwaith ar y dyddiau maent yn gwneud cais amdanynt"
+  },
+  "ul-tiw": {
+    "li1": "eich cyflogwr a manylion eich swydd",
+    "li2": "oedd %s yn y gwaith ar y dyddiau maent yn gwneud cais amdanynt"
   }
 }

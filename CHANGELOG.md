@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.19.0 - (2024-04-17)
+* Changes for Travel in Work journey by updating About your grant, Summary andd Declaration screen
+* Update fragments
+
 ## 1.18.0 - (2024-02-28)
 * Update fragments
 * Update packages

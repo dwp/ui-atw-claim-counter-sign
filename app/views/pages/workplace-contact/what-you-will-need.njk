@@ -24,6 +24,11 @@
             <li class="govuk-body">{{ t('what-you-will-need:ul-tw.li1') }}</li>
             <li class="govuk-body">{{ t('what-you-will-need:ul-tw.li2', employeeName) }}</li>
         </ul>
+    {% elif typeOfClaim === 'TIW' %}
+         <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li class="govuk-body">{{ t('what-you-will-need:ul-tiw.li1') }}</li>
+            <li class="govuk-body">{{ t('what-you-will-need:ul-tiw.li2', employeeName) }}</li>
+        </ul>
     {% endif %}
 
 {% endblock %}

@@ -12,5 +12,10 @@
     "li2": "mae eich gweithiwr ond yn gwneud cais am deithiau sydd wedi cael eu gwneud yn y 9 mis diwethaf",
     "li3": "gallwn gysylltu â chi os byddwn angen mwy o wybodaeth i brosesu cais eich gweithiwr"
   },
+  "ul-tiw": {
+    "li1": "mae eich gweithiwr wedi teithio yn ystod gwaith ar y dyddiau maent yn gwneud cais amdanynt",
+    "li2": "dim ond am deithiau a wnaed yn ystod y 9 mis diwethaf mae eich gweithiwr yn gwneud cais amdanynt",
+    "li3": "gallwn gysylltu â chi os byddwn angen mwy o wybodaeth i brosesu cais eich gweithiwr"
+  },
   "link": "Rwyf yn cytuno - anfon y cais hwn"
 }

@@ -2,19 +2,23 @@
   "pageTitle": "Cais teithio i'r gwaith %s",
   "h1": {
     "sw": "Cais Gweithiwr cymorth %s",
-    "tw": "Cais Teithio i'r gwaith %s"
+    "tw": "Cais Teithio i'r gwaith %s",
+    "tiw": "Cais teithio yn ystod gwaith %s"
   },
   "h1-ga": {
     "sw": "Cais gweithiwr am weithiwr cymorth",
-    "tw": "Cais gweithiwr am deithio i'r gwaith"
+    "tw": "Cais gweithiwr am deithio i'r gwaith",
+    "tiw": "Cais gweithiwr am teithio yn ystod y gwaith"
   },
   "p1": {
     "sw": "Mae angen i chi wirio'r dyddiau mae %s yn gwneud cais am gymorth ar eu cyfer a nifer yr oriau maent yn gwneud cais amdanynt bob dydd.",
-    "tw": "Mae angen i chi wirio'r dyddiau mae %s yn gwneud cais am gostau teithio i ac o'r gwaith. Byddwn hefyd yn gofyn i chi gadarnhau a oedd eich gweithiwr yn y gwaith ar y diwrnodau y maent yn gwneud cais ar eu cyfer."
+    "tw": "Mae angen i chi wirio'r dyddiau mae %s yn gwneud cais am gostau teithio i ac o'r gwaith. Byddwn hefyd yn gofyn i chi gadarnhau a oedd eich gweithiwr yn y gwaith ar y diwrnodau y maent yn gwneud cais ar eu cyfer.",
+    "tiw": "Mae angen i chi wirio y dyddiau mae %s yn gwneud cais am gostau teithio yn y gwaith. Byddwn hefyd yn gofyn i chi gadarnhau a oedd eich gweithiwr yn y gwaith ar y diwrnodau y maent yn gwneud cais ar eu cyfer."
   },
   "p2": {
     "sw": "Yna byddwn yn gofyn i chi gadarnhau cais %s neu ddweud wrthym pam na allwch gadarnhau eu cais.",
-    "tw": "Yna byddwn yn gofyn i chi gadarnhau eu cais neu ddweud wrthym pam rydych yn anghytuno a'u cais."
+    "tw": "Yna byddwn yn gofyn i chi gadarnhau eu cais neu ddweud wrthym pam rydych yn anghytuno a'u cais.",
+    "tiw": "Yna byddwn yn gofyn i chi gadarnhau eu cais neu ddweud wrthym pam rydych yn anghytuno a'u cais."
   },
   "h2-2": "Gwybodaeth am y cais",
   "h2-3": "Ydych chi'n cadarnhau bod y cais hwn yn gywir?",

@@ -18,7 +18,6 @@ module.exports = () => {
 
   const workplaceContactJourney = {
     'about-claim': require('./workplace-contact/about-claim')(),
-    'incorrect-claim': require('./workplace-contact/incorrect-claim')(),
     'what-you-will-need': require('./workplace-contact/what-you-will-need')(),
     'company-organisation-name': require('./workplace-contact/company-organisation-name')(),
     'job-title': require('./workplace-contact/job-title')(),
