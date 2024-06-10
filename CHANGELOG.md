@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.20.0 - (2024-06-04)
+* Update pipeline to v3.1
+* Moved from SaaS to HCS runners
+* Fixing Axios errors by adjusting validation for enter claim ref number
+* Fixed gov.uk link 
+* Dependency updates
+
 ## 1.19.0 - (2024-04-17)
 * Changes for Travel in Work journey by updating About your grant, Summary andd Declaration screen
 * Update fragments

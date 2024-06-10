@@ -1,7 +1,7 @@
 ARG NODE_VERSION
 ARG PORT
 
-FROM node:${NODE_VERSION} AS builder
+FROM node:18-alpine@sha256:982b5b6f07cd9241c9ebb163829067deac8eaefc57cfa8f31927f4b18943d971 AS builder
 RUN apk --no-cache update && apk upgrade
 ARG GITLAB_REGISTRY_TOKEN
 ENV PORT=${PORT}
@@ -13,8 +13,8 @@ RUN npm install && \
     npm run build && \
     npm prune --production
 
-FROM node:${NODE_VERSION}
-RUN apk upgrade libssl3 libcrypto3 && apk --no-cache add aws-cli=1.25.97-r0 jq=1.6-r2 curl=8.5.0-r0 && rm -rf /var/cache/apk/*
+FROM node:18-alpine@sha256:982b5b6f07cd9241c9ebb163829067deac8eaefc57cfa8f31927f4b18943d971
+RUN apk upgrade libssl3 libcrypto3 && apk --no-cache add aws-cli=2.15.14-r0 jq=1.6-r4 curl=8.5.0-r0 && rm -rf /var/cache/apk/*
 WORKDIR /
 COPY --from=builder app.js .
 COPY --from=builder /app/ /app/

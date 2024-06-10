@@ -11,7 +11,6 @@ the [Health PDU Nexus npm registry](https://dwpdigital.atlassian.net/wiki/spaces
 
 ```
 npm install
-npm install --registry=https://nexus.mgmt.health-dev.dwpcloud.uk/repository/npm-internal/ --always-auth
 ```
 
 ## Run

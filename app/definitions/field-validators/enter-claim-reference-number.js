@@ -13,17 +13,17 @@ const fieldValidators = {
       },
     }),
     r.regex.make({
-      pattern: regexDefinitions.CLAIM_TYPE_CHECK,
-      errorMsg: {
-        inline: 'enter-claim-reference-number:validation.invalid',
-        summary: 'enter-claim-reference-number:validation.invalid',
-      },
-    }),
-    r.regex.make({
       pattern: regexDefinitions.CLAIM_TYPE_PREFIX_CHECK,
       errorMsg: {
         inline: 'enter-claim-reference-number:validation.prefix',
         summary: 'enter-claim-reference-number:validation.prefix',
+      },
+    }),
+    r.regex.make({
+      pattern: regexDefinitions.CLAIM_TYPE_CHECK,
+      errorMsg: {
+        inline: 'enter-claim-reference-number:validation.invalid',
+        summary: 'enter-claim-reference-number:validation.invalid',
       },
     }),
     r.regex.make({
