@@ -1,7 +1,9 @@
 const cleanClaimData = require('../../../../app/utils/clean-data');
-const {
-  assert,
-} = require('chai');
+
+let assert;
+(async() => {
+  assert = (await import ('chai')).assert;
+})();
 describe('JSON: clean-claim-data', () => {
 
   describe('JSON: cleanClaimData', () => {

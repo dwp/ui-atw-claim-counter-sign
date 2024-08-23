@@ -3,12 +3,14 @@ const nonce = rewire('../../../../app/middleware/nonce');
 const Request = require('../../../helpers/fakeRequest');
 const Response = require('../../../helpers/fakeResponse');
 const sinon = require('sinon');
-const chai = require('chai');
-const { assert } = require('chai');
-const {
-  expect,
-} = chai;
-chai.use(require('sinon-chai'));
+
+let  assert, expect;
+(async() => {
+  chai = await import ('chai');
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
 
 describe('nonce', () => {
   const next = sinon.stub();

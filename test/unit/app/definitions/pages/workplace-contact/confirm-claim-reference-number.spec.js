@@ -1,12 +1,13 @@
-const chai = require('chai');
 const page = require(
   '../../../../../../app/definitions/pages/workplace-contact/confirm-claim-reference-number');
+const sinon = require('sinon');
 
-const {
-  assert,
-  expect,
-} = chai;
-chai.use(require('sinon-chai'));
+let assert, expect;
+(async() => {
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
 
 describe('definitions/pages/workplace-contact/confirm-claim-reference-number', () => {
   it('should page a function', () => {

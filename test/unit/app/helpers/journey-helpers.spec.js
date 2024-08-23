@@ -1,4 +1,7 @@
-const { expect } = require('chai');
+let expect;
+(async() => {
+  expect = (await import ('chai')).expect;
+})();
 const { JourneyContext } = require('@dwp/govuk-casa');
 const journeyHelpers = require('../../../../app/helpers/journey-helpers');
 

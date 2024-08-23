@@ -1,18 +1,18 @@
 const rewire = require('rewire');
-
 const page = rewire('../../../../../app/definitions/pages/common/postcode-of-company');
-const chai = require('chai');
-
-const {
-  assert,
-  expect,
-} = chai;
 const sinon = require('sinon');
-chai.use(require('sinon-chai'));
+const axiosStub = sinon.stub();
+
+let assert, expect;
+(async() => {
+  chai = await import ('chai');
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
+
 const Request = require('../../../../helpers/fakeRequest');
 const Response = require('../../../../helpers/fakeResponse');
-
-const axiosStub = sinon.stub();
 // eslint-disable-next-line no-underscore-dangle
 page.__set__('axios', axiosStub);
 

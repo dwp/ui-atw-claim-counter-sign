@@ -1,19 +1,21 @@
 const rewire = require('rewire');
-
 const page = rewire('../../../../../../app/definitions/pages/workplace-contact/security-number');
-const chai = require('chai');
 
-const {
-  assert,
-  expect,
-} = chai;
 const sinon = require('sinon');
-chai.use(require('sinon-chai'));
+const axiosStub = sinon.stub();
+
+let assert, expect;
+(async() => {
+  chai = await import ('chai');
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
+
 const Request = require('../../../../../helpers/fakeRequest');
 const Response = require('../../../../../helpers/fakeResponse');
 const generateSHA512HashValue = require('../../../../../../app/utils/generate-sha512-hash-value');
 
-const axiosStub = sinon.stub();
 const skipValidationStub = sinon.stub();
 const req = new Request();
 const res = new Response(req);

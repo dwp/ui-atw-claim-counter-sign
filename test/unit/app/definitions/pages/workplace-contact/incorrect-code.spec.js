@@ -1,12 +1,14 @@
-const chai = require('chai');
 const page = require(
   '../../../../../../app/definitions/pages/workplace-contact/incorrect-code');
 
-const {
-  assert,
-  expect,
-} = chai;
-chai.use(require('sinon-chai'));
+const sinnon = require('sinon'); 
+  
+let assert, expect;
+(async() => {
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
 
 describe('definitions/pages/workplace-contact/incorrect-code', () => {
   it('should export a function', () => {

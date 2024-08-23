@@ -4,9 +4,13 @@ const Response = require('../../../helpers/fakeResponse');
 
 const thankYou = rewire('../../../../app/routes/claim-submitted');
 const sinon = require('sinon');
-const {
-  assert,
-} = require('chai');
+
+let assert, expect;
+(async() => {
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
 
 const endSessionStub = sinon.stub();
 const app = {

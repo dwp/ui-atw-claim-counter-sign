@@ -1,9 +1,14 @@
 const formatter = require('../../../../../app/lib/custom-filters/month-formatter');
-const {
-  assert,
-  expect,
-} = require('chai');
+
 const sinon = require('sinon');
+
+let assert, expect;
+(async() => {
+  chai = await import ('chai');
+  assert = (await import ('chai')).assert;
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
 
 describe('monthObjectFormatter', () => {
   

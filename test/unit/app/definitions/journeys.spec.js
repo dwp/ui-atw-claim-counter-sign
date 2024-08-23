@@ -1,6 +1,7 @@
-const {
-  assert,
-} = require('chai');
+let assert;
+(async() => {
+  assert = (await import ('chai')).assert;
+})();
 const journeys = require('../../../../app/definitions/journeys');
 
 describe('definitions/journeys.js', () => {

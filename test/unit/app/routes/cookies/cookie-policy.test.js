@@ -1,6 +1,11 @@
 const sinon = require('sinon');
-const { expect } = require('chai')
-  .use(require('sinon-chai'));
+
+let expect;
+(async() => {
+  chai = await import ('chai');
+  expect = (await import ('chai')).expect;
+  chai.use(require('sinon-chai'));
+})();
 const { CONSENT_COOKIE_NAME } = require('../../../../../app/config/constants.js');
 const Request = require('../../../../../test/helpers/fakeRequest');
 const Response = require('../../../../../test/helpers/fakeResponse');

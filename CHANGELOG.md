@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.21.0 - (2024-08-21)
+* Major Chai dependency update to 5.1.1
+* Node updated to 22.*.*
+* Dependency updates
+
 ## 1.20.0 - (2024-06-04)
 * Update pipeline to v3.1
 * Moved from SaaS to HCS runners

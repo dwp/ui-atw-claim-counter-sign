@@ -2,12 +2,14 @@ const Request = require('../../../../helpers/fakeRequest');
 const Response = require('../../../../helpers/fakeResponse');
 
 const page = require('../../../../../app/routes/feedback/help-us-improve-this-service');
-const chai = require('chai');
-const {
-  assert,
-} = require('chai');
 const sinon = require('sinon');
-chai.use(require('sinon-chai'));
+const endSessionStub = sinon.stub();
+
+let assert;
+(async() => {
+  assert = (await import ('chai')).assert;
+  chai.use(require('sinon-chai'));
+})();
 
 describe('/feedback', () => {
     const req = new Request();
@@ -18,7 +20,6 @@ describe('/feedback', () => {
     });
 
     describe('when called', () => {
-        const endSessionStub = sinon.stub();
         endSessionStub.resolves(Promise.resolve());
 
         const app = {
