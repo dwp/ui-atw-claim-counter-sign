@@ -157,21 +157,13 @@ describe('cookies/cookie-policy', () => {
       const req = new Request();
       const res = new Response(req);
       req.body.cookieConsent = 'reject';
-      req.headers.cookie = '_gat';
+      req.headers.cookie = '_ga';
       res.clearCookie = sinon.stub();
       route(req, res);
       expect(res.clearCookie)
         .to
         .be
         .calledWith('_ga');
-      expect(res.clearCookie)
-        .to
-        .be
-        .calledWith('_gat');
-      expect(res.clearCookie)
-        .to
-        .be
-        .calledWith('_gid');
     });
 
     it('should redirect back to backto query URL if present', () => {

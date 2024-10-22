@@ -55,6 +55,9 @@ const securityNumberService = {
   skipValidation: config.get('services.securityNumberService.skipValidation'),
 };
 
+const cookieDomain = config.get('services.cookieHandler.domain');
+const cookiePath = config.get('services.cookieHandler.path');
+
 module.exports = {
   mountURL,
   APP_VERSION,
@@ -79,4 +82,6 @@ module.exports = {
   claimService,
   securityNumberService,
   addressLookup,
+  cookieDomain,
+  cookiePath,
 };

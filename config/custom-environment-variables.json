@@ -4,6 +4,10 @@
     "mountUrl": "MOUNT_URL"
   },
   "services": {
+    "cookieHandler": {
+      "domain": "COOKIE_DOMAIN",
+      "path": "COOKIE_PATH"
+    },
     "claimService": {
       "url": "CLAIM_URL"
     },

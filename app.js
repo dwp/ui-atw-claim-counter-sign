@@ -222,7 +222,7 @@ cookieMiddleware(
   CONSENT_COOKIE_NAME,
   'cookie-policy',
   'cookie-consent',
-  '.dwp.gov.uk', // CONFIG.GOOGLE_TAG_MANAGER_DOMAIN,
+  '.get-disability-work-support.service.gov.uk', // CONFIG.GOOGLE_TAG_MANAGER_DOMAIN,
   mountURL, // mountUrl,
   '/', // proxyMountUrl,
   SESSION_SECURE_COOKIE, // useTLS,

@@ -16,7 +16,7 @@ module.exports = (consentCookieName, mountUrl, gtmDomain, useTLS) => (req, res) 
 
   // If rejected, remove any GA cookies
   if (cookieConsent === 'reject') {
-    removeGTMCookies(req, res, gtmDomain);
+    removeGTMCookies(req, res);
   }
 
   if (req.query.backto) {

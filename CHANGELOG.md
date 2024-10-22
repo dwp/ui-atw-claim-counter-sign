@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.22.0 - (2024-09-25)
+* Push to shared account
+* Configurable variable added for GA cookie removal
+* Dynatrace config added
+* Dependency updates
+
 ## 1.21.0 - (2024-08-21)
 * Major Chai dependency update to 5.1.1
 * Node updated to 22.*.*

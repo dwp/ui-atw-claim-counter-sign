@@ -32,6 +32,11 @@
     "showWelshLanguageToggle": true
   },
   "services": {
+
+    "cookieHandler": {
+      "domain": ".get-disability-work-support.service.gov.uk",
+      "path": "/"
+    },
     "claimService": {
       "url": "http://localhost:9014"
     },
