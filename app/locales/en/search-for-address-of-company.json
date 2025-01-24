@@ -9,6 +9,7 @@
   "manualLink": "I can’t find %s's address in the list",
   "manualLinkNoAddress": "I can't find %s's address",
   "noAddressesFound": "No addresses found for %s",
+  "changePostcode": " postcode",
   "select": {
     "errors": {
       "required": "Select an address from the list or enter the address manually"

@@ -10,21 +10,15 @@ const mountURL = config.get('app.mountUrl');
 // Get redis config from environment
 const USE_REDIS = config.has('session.redis.host') && config.get('session.redis.host') !== null
   && config.has('session.redis.port') && config.get('session.redis.port') !== null;
-const REDIS_HOST = config.has('session.redis.host') ? config.get('session.redis.host') : null;
-const REDIS_PORT = config.has('session.redis.host') ? config.get('session.redis.port') : null;
-const REDIS_PASSWORD = config.has('session.redis.host')
-  ? config.get('session.redis.password')
-  : null;
-const REDIS_DB = config.has('session.redis.host') ? config.get('session.redis.database') : null;
-const REDIS_CLUSTER = config.has('session.redis.host') ? config.get('session.redis.cluster') : null;
-const REDIS_USE_ENCRYPTION = config.has('session.redis.host')
-  ? config.get('session.redis.useEncryption')
-  : null;
-const REDIS_KMS_ID = config.has('session.redis.host') ? config.get('session.redis.kmsId') : null;
-const REDIS_AWS_REGION = config.has('session.redis.host')
-  ? config.get('session.redis.awsRegion')
-  : null;
-const REDIS_PREFIX = config.has('session.redis.host') ? config.get('session.redis.prefix') : null;
+const REDIS_HOST = USE_REDIS ? config.get('session.redis.host') : null;
+const REDIS_PORT = USE_REDIS ? config.get('session.redis.port') : null;
+const REDIS_PASSWORD = USE_REDIS ? config.get('session.redis.password') : null;
+const REDIS_DB = USE_REDIS ? config.get('session.redis.database') : null;
+const REDIS_CLUSTER = USE_REDIS ? config.get('session.redis.cluster') : null;
+const REDIS_USE_ENCRYPTION = USE_REDIS ? config.get('session.redis.useEncryption') : null;
+const REDIS_KMS_ID = USE_REDIS ? config.get('session.redis.kmsId') : null;
+const REDIS_AWS_REGION = USE_REDIS ? config.get('session.redis.awsRegion') : null;
+const REDIS_PREFIX =USE_REDIS ? config.get('session.redis.prefix') : null;
 const REDIS_USE_TLS = USE_REDIS ? config.get('session.redis.useTLS') : null;
 
 // AWS cli looks for null here, so force it if it's undefined

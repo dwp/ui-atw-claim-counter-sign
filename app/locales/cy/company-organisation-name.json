@@ -7,10 +7,10 @@
   "reviewBlock": {
     "h2": "Gwybodaeth am Sefydliad",
     "companyNameKey": "Enw'r cwmni neu'r sefydliad rydych yn gweithio iddo",
-    "changeCompanyName": "Enw'r Cwmni",
+    "changeCompanyName": "enw'r cwmni neu'r sefydliad rydych yn gweithio iddo",
     "addressKey": "Cyfeiriad sefydliad",
-    "changeAddress": "Cyfeiriad Cwmni",
+    "changeAddress": "cod post a chyfeiriad cwmni neu sefydliad",
     "jobTitleKey": "Title eich swydd",
-    "changeJobTitle": "Teitl Swydd Cwmni"
+    "changeJobTitle": "eich teitl swydd"
   }
 }

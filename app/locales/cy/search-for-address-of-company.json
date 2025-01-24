@@ -9,6 +9,7 @@
   "manualLink": "Ni allaf ddod o hyd i gyfeiriad %s yn y rhestr",
   "manualLinkNoAddress": "Ni allaf ddod o hyd i gyfeiriad %s",
   "noAddressesFound": "Ni ddarganfyddwyd cyfeiriad ar gyfer %s",
+  "changePostcode": " cod post",
   "select": {
     "errors": {
       "required": "Dewiswch gyfeiriad o'r rhestr neu rhowch y cyfeiriad â llaw"

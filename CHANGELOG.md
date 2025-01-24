@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.23.0 - (2024-01-22)
+* Changes to visually hidden text
+* Updated content on cookies page
+
 ## 1.22.0 - (2024-09-25)
 * Push to shared account
 * Configurable variable added for GA cookie removal

@@ -15,7 +15,9 @@
 
     <p class="govuk-body">
         <strong>{{ t('search-for-address-of-company:addressFound', addressLength) }} {{ t('search-for-address-of-company:for') }} {{ postcode }}</strong>
-        <a href="{{ changePostcodeUrl }}">Change</a>
+        <a href="{{ changePostcodeUrl }}">Change
+            <span class="govuk-visually-hidden"> {{ t('search-for-address-of-company:changePostcode') }}</span>
+        </a>
     </p>
 
     {% if addressLength > 0 %}
