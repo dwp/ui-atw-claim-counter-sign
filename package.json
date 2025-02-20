@@ -1,6 +1,6 @@
 {
   "name": "ui-claim-counter-sign",
-  "version": "1.23.0",
+  "version": "1.24.0",
   "description": "Access to Work Claim Counter Sign UI",
   "main": "app.js",
   "directories": {
@@ -30,7 +30,7 @@
     "graphlib": "2.1.8",
     "graphlib-dot": "0.6.4",
     "hmrc-frontend": "5.66.0",
-    "ioredis": "5.4.2",
+    "ioredis": "5.5.0",
     "luxon": "3.5.0",
     "minimatch": "10.0.1",
     "minimist": "1.2.8",
@@ -62,6 +62,19 @@
     "sinon": "15.1.2",
     "sinon-chai": "3.7.0"
   },
+  "overrides": {
+    "braces": "3.0.3",
+    "gulp-cli": {
+      "yargs": {
+        "y18n": "4.0.3"
+      }
+    },
+    "eslint@8.42.0": {
+      "glob-parent": "6.0.2"
+    },
+    "glob-parent": "5.1.2"
+  },
   "author": "Health PDU",
   "license": "MIT"
 }
+

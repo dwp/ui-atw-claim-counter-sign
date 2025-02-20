@@ -76,7 +76,9 @@ module.exports = (
         search,
       } = new URL(referrer, 'http://dummy.test/');
       const redirectBackTo = sanitiseUrl(pathname + search);
-      req.session.save(() => res.redirect(redirectBackTo));
+      if (redirectBackTo.includes('/review-claim')) {
+        req.session.save(() => res.redirect(redirectBackTo));
+      }
     } else {
       res.redirect(mountUrl);
     }

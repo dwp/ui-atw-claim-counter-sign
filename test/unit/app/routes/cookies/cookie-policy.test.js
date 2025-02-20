@@ -118,7 +118,7 @@ describe('cookies/cookie-policy', () => {
           .equal('cookie-policy:field.cookieConsent.required');
         expect(res.redirectedTo)
           .to
-          .equal('test');
+          .equal('/review-claim/test');
       });
 
     it(
@@ -135,7 +135,7 @@ describe('cookies/cookie-policy', () => {
           .equal('cookie-policy:field.cookieConsent.required');
         expect(res.redirectedTo)
           .to
-          .equal('test');
+          .equal('/review-claim/test');
       });
 
     it('should update consent cookie if req.body.cookieConsent is accept or reject', () => {

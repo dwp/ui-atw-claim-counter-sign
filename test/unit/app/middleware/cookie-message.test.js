@@ -254,27 +254,27 @@ describe('Middleware: cookie-message', () => {
     it('should redirect back to Referrer path', () => {
       const req = new Request();
       const res = new Response(req);
-      req.headers.Referrer = '/claims/page';
+      req.headers.Referrer = '/review-claim/page';
       cookieMessage(app, cookieName, 'cookie-policy', 'cookie-consent', 'gtmdomain', mount,
         proxyMount, false);
       app.all(req, res, () => {
       });
       expect(res.redirectedTo)
         .to
-        .equal('/claims/page');
+        .equal('/review-claim/page');
     });
 
     it('should redirect back to only path on this domain', () => {
       const req = new Request();
       const res = new Response(req);
-      req.headers.Referrer = 'http://other-domain/claims/page';
+      req.headers.Referrer = 'http://other-domain/review-claim/page';
       cookieMessage(app, cookieName, 'cookie-policy', 'cookie-consent', 'gtmdomain', mount,
         proxyMount, false);
       app.all(req, res, () => {
       });
       expect(res.redirectedTo)
         .to
-        .equal('/claims/page');
+        .equal('/review-claim/page');
     });
 
     it('should redirect to / if referrer starts with "javascript:"', () => {

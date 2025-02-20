@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.24.0 - (2024-02-18)
+* Fixed Git vulnerabilities
+* Fixed Pipeline
+* Fragment Updates
+
 ## 1.23.0 - (2024-01-22)
 * Changes to visually hidden text
 * Updated content on cookies page

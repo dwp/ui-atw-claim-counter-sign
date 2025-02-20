@@ -6,11 +6,11 @@ project:
   - project_id: 31176665
     component_name: ui-claim-counter-sign
 
-    version: 1.23.0
+    version: 1.24.0
 
     last_verified:
-      date: "2025-01-22"
-      name: "@kamran.ali2"
+      date: "2025-02-18"
+      name: "@ruta.radiya1"
 
     tags:
       payments: false

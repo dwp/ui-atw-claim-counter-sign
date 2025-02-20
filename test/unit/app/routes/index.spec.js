@@ -40,7 +40,7 @@ describe('/index', () => {
     });
 
     it('should redirect to start page', async () => {
-      req.originalUrl = 'some-mount-url/'
+      req.originalUrl = '/review-claim/some-mount-url/'
 
       router.get = (path, callback) => {
         assert.equal(path, '/');
@@ -63,7 +63,7 @@ describe('/index', () => {
     });
 
     it('should redirect to start page even if the request is missing trailing slash', async () => {
-      req.originalUrl = '/some-mount-url'
+      req.originalUrl = '/review-claim/some-mount-url'
 
       router.get = (path, callback) => {
         assert.equal(path, '/');
@@ -76,7 +76,7 @@ describe('/index', () => {
       expect(redirectStub)
         .to
         .be
-        .calledOnceWithExactly('/some-mount-url/');
+        .calledOnceWithExactly('/review-claim/some-mount-url/');
     });
   });
 });
