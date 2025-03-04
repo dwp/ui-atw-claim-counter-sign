@@ -1,6 +1,6 @@
 {
   "name": "ui-claim-counter-sign",
-  "version": "1.24.0",
+  "version": "1.25.0",
   "description": "Access to Work Claim Counter Sign UI",
   "main": "app.js",
   "directories": {
