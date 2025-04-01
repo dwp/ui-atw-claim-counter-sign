@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.26.0 (2025-03-28)
+* README updated
+* Fragment updates
+* Dependency updates
+* AWS information updated 
+
+## 1.25.0 (2025-03-10)
+
+* Update version ([be09420](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/be09420))
+* Update version and push jobs ([f41e4bb](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/f41e4bb))
+* Add tests ([b344b6f](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/b344b6f))
+* [skip-ci] ([857914b](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/857914b))
+* Ignore connect-redis version ([a15bf38](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/a15bf38))
+* Ignore connect-redis version ([fac89db](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/fac89db))
+* Ignore connect-redis version ([66d7998](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/66d7998))
+* Remove tests for now ([f6f6dbd](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/f6f6dbd))
+* Merge develop into branch ([2cd0250](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/2cd0250))
+* Pull Integration CA from secrets manager ([56d5cad](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/56d5cad))
+* Pull Integration CA from secrets manager ([1348109](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/1348109))
+* Pull Integration CA from secrets manager ([0b2c1ab](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/0b2c1ab))
+* Pull Integration CA from secrets manager ([ad4bad7](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/ad4bad7))
+* Pull Integration CA from secrets manager ([df63a15](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/df63a15))
+
+
 ## 1.24.0 - (2024-02-18)
 * Fixed Git vulnerabilities
 * Fixed Pipeline

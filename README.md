@@ -6,9 +6,6 @@ Application for the Access To Work Claim journey involving counter-sign using th
 
 ## Install
 
-**NOTE:** You will need to configure npm on your development machine so that it uses
-the [Health PDU Nexus npm registry](https://dwpdigital.atlassian.net/wiki/spaces/EN/pages/56725768926/Nexus#Nexus-npm).
-
 ```
 npm install
 ```
