@@ -1,6 +1,6 @@
 {
   "name": "ui-claim-counter-sign",
-  "version": "1.26.0",
+  "version": "1.27.0",
   "description": "Access to Work Claim Counter Sign UI",
   "main": "app.js",
   "directories": {
@@ -31,7 +31,7 @@
     "graphlib-dot": "0.6.4",
     "hmrc-frontend": "5.66.0",
     "ioredis": "5.6.0",
-    "luxon": "3.6.0",
+    "luxon": "3.6.1",
     "minimatch": "10.0.1",
     "minimist": "1.2.8",
     "moment": "2.30.1",

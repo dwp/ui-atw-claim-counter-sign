@@ -1,13 +1,16 @@
 # Changelog
 
+## 1.27.0 (2025-04-09)
+* removed unused h2 on check-your-answers
+* Dependency updates
+* Updated suppression
+
 ## 1.26.0 (2025-03-28)
 * README updated
 * Fragment updates
-* Dependency updates
 * AWS information updated 
 
 ## 1.25.0 (2025-03-10)
-
 * Update version ([be09420](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/be09420))
 * Update version and push jobs ([f41e4bb](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/f41e4bb))
 * Add tests ([b344b6f](https://gitlab.com/dwp/health/atw/components/ui-claim-counter-sign/-/commit/b344b6f))
