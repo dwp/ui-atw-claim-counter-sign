@@ -1,5 +1,9 @@
 {
-  "pageTitle": "%s Travel for work claim",
+  "pageTitle": {
+    "sw": "Their Support worker claim - Claim review",
+    "tw": "Their Travel for work claim - Claim review",
+    "tiw": "Their Travel during work claim - Claim review"
+  },
   "h1": {
     "sw": "%s Support worker claim",
     "tw": "%s Travel for work claim",

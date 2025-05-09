@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.28.0 (2025-04-30)
+* WCAG compliance updates for title tags
+
 ## 1.27.0 (2025-04-09)
 * removed unused h2 on check-your-answers
 * Dependency updates

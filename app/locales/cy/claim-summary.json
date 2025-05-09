@@ -1,5 +1,9 @@
 {
-  "pageTitle": "Cais teithio i'r gwaith %s",
+  "pageTitle": {
+    "sw": "Eu cais am Gweithiwr cymorth - Adolygu cais",
+    "tw": "Eu cais am Teithio ar gyfer gwaith - Adolygu cais",
+    "tiw": "Eu cais am Teithio yn ystod gwaith - Adolygu cais"
+  },
   "h1": {
     "sw": "Cais Gweithiwr cymorth %s",
     "tw": "Cais Teithio i'r gwaith %s",

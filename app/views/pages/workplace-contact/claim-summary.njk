@@ -11,7 +11,15 @@
 {% endblock %}
 
 {% block casaPageTitle %}
-    {{ t('claim-summary:h1.sw', employeeName) }}
+    {% if typeOfClaim === 'SW' %}
+        {{ t('claim-summary:pageTitle.sw', employeeName) }}
+    {% endif %}
+    {% if typeOfClaim === 'TW' %}
+        {{ t('claim-summary:pageTitle.tw', employeeName) }}
+    {% endif %}
+    {% if typeOfClaim === 'TIW' %}
+        {{ t('claim-summary:pageTitle.tiw', employeeName) }}
+    {% endif %}
 {% endblock %}
 {% block journey_form %}
     {% if typeOfClaim === 'SW' %}
