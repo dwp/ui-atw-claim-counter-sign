@@ -1,6 +1,6 @@
 {
   "pageTitle": "Anfon y cais hwn yn ôl i'w gywiro - Adolygu cais",
-  "h1": "Anfonwch y cais hwn yn ôl i %s i'w gywiro",
+  "h1": "Dychwelyd y cais hwn i %s i'w gywiro",
   "h1-ga": "Anfonwch y cais hwn yn ôl i'r gweithiwr i'w gywiro",
   "p1": "Byddwn yn dweud wrth %s nad ydych wedi cadarnhau eu cais ac yn dweud wrthym y rheswm.",
   "p2": "Unwaith y bydd %s wedi diweddaru eu cais, byddwn yn ei anfon yn ôl i chi i'w adolygu.",
@@ -19,5 +19,5 @@
       "col1": "Y rheswm pam na allwch gadarnhau'r cais hwn"
     }
   },
-  "link": "Rwyf yn cytuno - anfon y cais yn ôl"
+  "link": "Cytuno ac anfon"
 }

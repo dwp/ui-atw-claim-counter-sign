@@ -5,6 +5,13 @@
 
 {% extends "layouts/journey.njk" %}
 
+{% if formErrorsGovukArray and formErrorsGovukArray.length > 0 %}
+    {% set firstError = (formErrorsGovukArray | first) %}
+    {% set errorMessage = { text: firstError.text } %}
+{% else %}
+    {% set errorMessage = false %}
+{% endif %}
+
 {% block casaPageTitle %}
     {{ t('claim-incorrect:pageTitle') }}
 {% endblock %}
@@ -29,6 +36,7 @@
         name: "claimIncorrect",
         value: formData.claimIncorrect,
         casaErrors: formErrors,
+        errorMessage: errorMessage,
         maxlength: 300,
         attributes: {
             "aria-label": t('claim-incorrect:h1'),

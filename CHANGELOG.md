@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.29.0 (2025-05-22)
+* Error messaging now appearing on text fields
+* Content changes
+
 ## 1.28.0 (2025-04-30)
 * WCAG compliance updates for title tags
 

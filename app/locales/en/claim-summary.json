@@ -5,9 +5,9 @@
     "tiw": "Their Travel during work claim - Claim review"
   },
   "h1": {
-    "sw": "%s Support worker claim",
-    "tw": "%s Travel for work claim",
-    "tiw": "%s Travel during work claim"
+    "sw": "%s's support worker claim",
+    "tw": "%s's travel for work claim",
+    "tiw": "%s's travel during work claim"
   },
   "h1-ga": {
     "sw": "Employee's support worker claim",
