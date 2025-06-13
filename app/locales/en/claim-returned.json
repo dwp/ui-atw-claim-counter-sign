@@ -2,13 +2,12 @@
   "pageTitle": "Claim returned - Claim review",
   "h1": "Claim returned to %s",
   "h1-ga": "Claim returned to employee",
-  "reference": "%s's claim reference number",
+  "reference": "%s claim reference number",
   "p1": "You should give us this claim reference number if you contact us about your claim.",
   "whatNext": {
     "h2": "What happens next",
-    "p1": "%s’s claim has been sent back to them. They will need to update their claim.",
-    "p2": "We’ll contact you when they’ve updated their claim. If you confirm the claim is correct, we’ll process the claim. If we approve it, we'll pay the money into the bank account they chose.",
-    "p3": "%s’s can see the progress of their claim in their claims history."
+    "p1": "%s will need to correct their claim.​",
+    "p2": "When they've corrected their claim, we'll ask you to review it again."
   },
   "feedback": {
     "link": "What did you think of this service?"

@@ -31,8 +31,8 @@ describe('definitions/pages/common/enter-address-of-company', () => {
       describe('`view` key', () => {
         it('should be defined', () => {
           expect(Object.keys(this.result))
-            .to
-            .includes('view');
+              .to
+              .includes('view');
         });
         it('value be a string', () => {
           assert.typeOf(this.result.view, 'string');
@@ -42,8 +42,8 @@ describe('definitions/pages/common/enter-address-of-company', () => {
       describe('`fieldValidators` key', () => {
         it('should be defined', () => {
           expect(Object.keys(this.result))
-            .to
-            .includes('fieldValidators');
+              .to
+              .includes('fieldValidators');
         });
 
         it('value should return an object', () => {
@@ -56,19 +56,19 @@ describe('definitions/pages/common/enter-address-of-company', () => {
     describe('trimPostalAddressObject of fieldGatherModifiers', () => {
       it('should trim spaces from address object', async () => {
         expect(Object.keys(this.result))
-          .to
-          .includes('fieldGatherModifiers');
+            .to
+            .includes('fieldGatherModifiers');
 
         const req = new Request();
 
         req.body.address =  { fieldValue:
-            {
-              "address1": "    1 Kenton Road    ",
-              "address2": "    L o n d o n",
-              "address3": "middlesex    ",
-              "address4": "UK",
-              "postcode": "    N   E 26   4 RS"
-            }
+              {
+                "address1": "    1 Kenton Road    ",
+                "address2": "    L o n d o n",
+                "address3": "middlesex    ",
+                "address4": "UK",
+                "postcode": "    N   E 26   4 RS"
+              }
         };
 
         const addressWithoutSpaces = {
@@ -80,37 +80,83 @@ describe('definitions/pages/common/enter-address-of-company', () => {
         };
 
         expect(trimPostalAddressObject(req.body.address))
-          .to
-          .include
-          .deep
-          .equals(addressWithoutSpaces);
+            .to
+            .include
+            .deep
+            .equals(addressWithoutSpaces);
       });
+    });
+
+    describe('`preredirect` key', () => {
+      it('should be defined', () => {
+        expect(Object.keys(this.result))
+            .to
+            .includes('hooks');
+        expect(Object.keys(this.result.hooks))
+            .to
+            .includes('preredirect');
+      });
+
+      it('should be inEditMode preredirect', () => {
+        const req = new Request();
+        const res = new Response(req);
+
+        req.inEditMode = true;
+
+        req.session.save = sinon.stub().callsFake(cb => cb());
+        res.redirect = sinon.stub();
+
+        this.result.hooks.preredirect(req, res, sinon.stub());
+
+        expect(req.session.save.calledOnce)
+            .to
+            .be
+            .true;
+
+        expect(res.redirect.calledWith('check-your-answers'))
+            .to
+            .be
+            .true;
+      });
+
+      it('should be inEditMode preredirect', () => {
+        const req = new Request();
+        const res = new Response(req);
+
+        req.inEditMode = false;
+        const nextStub = sinon.stub();
+
+        this.result.hooks.preredirect(req, res, nextStub);
+
+        expect(nextStub.calledOnce).to.be.true;
+      });
+
     });
 
     describe('`prerender` key', () => {
       it('should be defined', () => {
         expect(Object.keys(this.result))
-          .to
-          .includes('hooks');
+            .to
+            .includes('hooks');
         expect(Object.keys(this.result.hooks))
-          .to
-          .includes('prerender');
+            .to
+            .includes('prerender');
       });
       it('should populate local with companyName', () => {
         expect(Object.keys(this.result))
-          .to
-          .includes('hooks');
+            .to
+            .includes('hooks');
         expect(Object.keys(this.result.hooks))
-          .to
-          .includes('prerender');
+            .to
+            .includes('prerender');
 
         const req = new Request();
         const res = new Response(req);
 
         const getDataForPageStub = sinon.stub()
-          .returns({
-            companyOrganisationName: 'George',
-          });
+            .returns({
+              companyOrganisationName: 'George',
+            });
         const setDataForPageStub = sinon.stub();
         const nextStub = sinon.stub();
         req.casa = {
@@ -125,14 +171,14 @@ describe('definitions/pages/common/enter-address-of-company', () => {
         assert.equal(res.locals.companyName, 'George');
 
         expect(nextStub)
-          .to
-          .be
-          .calledOnceWithExactly();
+            .to
+            .be
+            .calledOnceWithExactly();
 
         expect(getDataForPageStub)
-          .to
-          .be
-          .calledOnceWithExactly('company-organisation-name');
+            .to
+            .be
+            .calledOnceWithExactly('company-organisation-name');
 
         sinon.assert.notCalled(setDataForPageStub);
       });
@@ -140,11 +186,11 @@ describe('definitions/pages/common/enter-address-of-company', () => {
     describe('`postvalidate` key', () => {
       it('should be defined', () => {
         expect(Object.keys(this.result))
-          .to
-          .includes('hooks');
+            .to
+            .includes('hooks');
         expect(Object.keys(this.result.hooks))
-          .to
-          .includes('postvalidate');
+            .to
+            .includes('postvalidate');
       });
 
       it('should setPage on hidden Address Waypoint', () => {
@@ -155,27 +201,27 @@ describe('definitions/pages/common/enter-address-of-company', () => {
         };
 
         expect(Object.keys(this.result))
-          .to
-          .includes('hooks');
+            .to
+            .includes('hooks');
         expect(Object.keys(this.result.hooks))
-          .to
-          .includes('postvalidate');
+            .to
+            .includes('postvalidate');
 
         const req = new Request();
         const res = new Response(req);
 
         const getDataForPageStub = sinon.stub()
-          .returns({ address: addressObj });
+            .returns({ address: addressObj });
         const setDataForPageStub = sinon.stub();
         const nextStub = sinon.stub();
 
         req.session = {
           save: sinon.stub()
-            .callsFake((cb) => {
-              if (cb) {
-                cb();
-              }
-            }),
+              .callsFake((cb) => {
+                if (cb) {
+                  cb();
+                }
+              }),
         };
 
         req.casa = {
@@ -188,23 +234,23 @@ describe('definitions/pages/common/enter-address-of-company', () => {
         this.result.hooks.postvalidate(req, res, nextStub);
 
         expect(nextStub)
-          .to
-          .be
-          .calledOnceWithExactly();
+            .to
+            .be
+            .calledOnceWithExactly();
 
         expect(getDataForPageStub)
-          .to
-          .be
-          .calledOnceWithExactly('enter-company-address');
+            .to
+            .be
+            .calledOnceWithExactly('enter-company-address');
 
         expect(setDataForPageStub)
-          .to
-          .be
-          .calledOnceWithExactly('__hidden_address__', {
-            addressDetails: addressObj,
-            addressFrom: 'manual',
-          });
+            .to
+            .be
+            .calledOnceWithExactly('__hidden_address__', {
+              addressDetails: addressObj,
+              addressFrom: 'manual',
+            });
       });
-  });
+    });
   });
 });

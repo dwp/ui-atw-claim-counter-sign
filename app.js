@@ -10,6 +10,7 @@ const logger = require('./app/logger/logger');
 const formatMonthYearObject = require('./app/lib/custom-filters/month-year-formatter');
 const formatMonth = require('./app/lib/custom-filters/month-formatter');
 const formatLocalDateTime = require('./app/lib/custom-filters/localdatetime-formatter');
+const formatPossessive = require('./app/lib/custom-filters/possessive-formatter');
 const cookieMiddleware = require('./app/middleware/cookie-message');
 const urlMiddleware = require('./app/middleware/url.middleware');
 const nonceMiddleware = require('./app/middleware/nonce');
@@ -214,7 +215,8 @@ if (config.SESSION_SECURE_COOKIE) {
 app.get('nunjucksEnv')
   .addFilter('formatMonthYearObject', formatMonthYearObject)
   .addFilter('formatMonth', formatMonth)
-  .addFilter('formatLocalDateTime', formatLocalDateTime);
+  .addFilter('formatLocalDateTime', formatLocalDateTime)
+  .addFilter('possessive', formatPossessive);
 
 nonceMiddleware(casaApp.router, true);
 cookieMiddleware(

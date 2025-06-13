@@ -6,9 +6,8 @@
   "p1": "Dylech roi'r rhif cyfeirnod cais hwn i ni os byddwch yn cysylltu â ni am eich cais.",
   "whatNext": {
     "h2": "Beth sy'n digwydd nesaf",
-    "p1": "Mae cais %s wedi cael ei anfon yn ôl iddynt. Bydd angen iddynt ddiweddaru eu cais.",
-    "p2": "Byddwn yn cysylltu â chi pan fyddant wedi diweddaru eu cais. Os ydych yn cadarnhau bod y cais yn gywir, byddwn yn prosesu'r cais. Os byddwn yn ei gymeradwyo, byddwn yn talu'r arian i'r cyfrif banc maent wedi ei ddewis.",
-    "p3": "Gall %s weld datblygiad eu cais yn eu hanes ceisiadau."
+    "p1": "Bydd angen i %s gywiro eu cais.",
+    "p2": "Pan fyddant wedi cywiro eu cais, byddwn yn gofyn i chi ei adolygu eto."
   },
   "feedback": {
     "link": "Beth oeddech chi'n ei feddwl o'r gwasanaeth hwn?"

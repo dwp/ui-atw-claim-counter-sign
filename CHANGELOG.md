@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.30.0 (2025-06-9)
+* Adopt pipeline execution policy changes
+* Possesive formatter content change for claim return screen
+
 ## 1.29.0 (2025-05-22)
 * Error messaging now appearing on text fields
 * Content changes

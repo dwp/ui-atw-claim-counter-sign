@@ -10,14 +10,13 @@
 
   {{ govukPanel({
         titleText: t('claim-returned:h1', employeeName),
-        html: t('claim-returned:reference', employeeName) + '<br />' + claimReference
+        html: t('claim-returned:reference', employeeName | possessive(locale)) + '<br />' + claimReference
     }) }}
 
     <h2 class="govuk-heading-m">{{ t('claim-returned:whatNext.h2') }}</h2>
 
-    <p class="govuk-body">{{ t('claim-returned:whatNext.p1', employeeName) }}</p>
+    <p class="govuk-body">{{ t('claim-returned:whatNext.p1', employeeName | possessive(locale)) }}</p>
     <p class="govuk-body">{{ t('claim-returned:whatNext.p2', employeeName) }}</p>
-    <p class="govuk-body">{{ t('claim-returned:whatNext.p3', employeeName) }}</p>
 
     <p class="govuk-body">
         <a href="{{ casa.mountUrl }}">{{ t('common:signOut') }}</a>
