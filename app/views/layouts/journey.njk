@@ -5,7 +5,7 @@
 {% from "casa/components/journey-form/macro.njk" import casaJourneyForm with context %}
 {% from "govuk/components/button/macro.njk" import govukButton %}
 {% from "govuk/components/footer/macro.njk" import govukFooter %}
-{% from "hmrc/components/header/macro.njk" import hmrcHeader %}
+{% from "../components/hmrc/header/macro.njk" import hmrcHeader %}
 
 {% block header %}
     {{ hmrcHeader({
@@ -110,6 +110,10 @@
             items: [ {
                 href: cookieDetailsUrl,
                 text: t("common:footer.cookies")
+            },
+            {
+                href: acessibilityStatementUrl,
+                text: t("common:footer.accessibilityStatement")
             }]
         }
     }) }}

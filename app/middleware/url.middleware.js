@@ -9,7 +9,7 @@ module.exports = (
   app.use(async (req, res, next) => {
     log.debug('middleware: url.middleware');
 
-    res.locals.feedbackFormDirectUrl = `https://forms.office.com/e/tCthQ5vywn`;
+    res.locals.feedbackFormDirectUrl = `https://forms.cloud.microsoft/e/QQqHJvdYEy`;
     next();
   });
 };

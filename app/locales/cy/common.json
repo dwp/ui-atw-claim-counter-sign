@@ -13,7 +13,8 @@
     }
   },
   "footer": {
-    "cookies": "Cwcis"
+    "cookies": "Cwcis",
+    "accessibilityStatement": "Datganiad Hygyrchedd"
   },
   "header": {
     "feedback": "Mae hwn yn wasanaeth newydd - bydd eich <a class=\"govuk-link\" href=\"${url}\">adborth</a> yn ein helpu i'w wella." 

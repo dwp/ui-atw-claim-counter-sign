@@ -15,6 +15,7 @@ const cookieMiddleware = require('./app/middleware/cookie-message');
 const urlMiddleware = require('./app/middleware/url.middleware');
 const nonceMiddleware = require('./app/middleware/nonce');
 const cookieDetailsGet = require('./app/routes/cookies/cookie-details.get');
+const accessbilityGet = require('./app/routes/cookies/cookie-details.get');
 const cookiePolicyPost = require('./app/routes/cookies/cookie-policy.post');
 const cookiePolicyGet = require('./app/routes/cookies/cookie-policy.get');
 const cookieParser = require('cookie-parser');
@@ -41,6 +42,7 @@ const {
   WORKPLACE_CONTACT_CONTEXT_PATH,
   AUTH_CONTEXT_PATH,
 } = require('./app/config/uri');
+const accessibilityStatementGet = require('./app/routes/common/accessibility-statement.get');
 
 let sessionStore;
 
@@ -250,6 +252,9 @@ require('./app/routes/feedback/help-us-improve-this-service')(casaApp);
 
 // Error
 require('./app/routes/error/problem-with-service')(casaApp);
+
+// Accessibility Statement
+casaApp.router.get('/accessibility-statement', accessibilityStatementGet());
 
 const pageDefinitions = require('./app/definitions/pages')();
 const journeyDefinition = require('./app/definitions/journeys')();

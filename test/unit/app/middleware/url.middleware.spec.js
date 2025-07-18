@@ -39,7 +39,7 @@ describe('Middleware: url', () => {
     app.use(req, res, nextStub);
     expect(res.locals.feedbackFormDirectUrl)
       .to
-      .eql('https://forms.office.com/e/tCthQ5vywn');
+      .eql('https://forms.cloud.microsoft/e/QQqHJvdYEy');
   });
 
 });

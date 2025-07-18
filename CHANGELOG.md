@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.31.0 (2025-07-16)
+* Deploy new feedback link
+* update catalog info
+* Add zoom accessibility header to banner
+* accessibility statement update
+* dependency updates
+
 ## 1.30.0 (2025-06-9)
 * Adopt pipeline execution policy changes
 * Possesive formatter content change for claim return screen

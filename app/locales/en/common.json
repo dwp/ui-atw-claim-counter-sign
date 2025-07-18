@@ -14,7 +14,8 @@
     }
   },
   "footer": {
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "accessibilityStatement": "Accessibility Statement"
   },
   "header": {
     "feedback": "This is a new service - your <a class=\"govuk-link\" href=\"${url}\">feedback</a> will help us to improve." 

@@ -25,6 +25,7 @@ module.exports = (
       req.session.cookieChoiceMade = undefined;
     }
     res.locals.cookieDetailsUrl = `${mountUrl}cookie-details`;
+    res.locals.acessibilityStatementUrl = `${mountUrl}accessibility-statement`;
 
     // Add current consent cookie value to templates
     if (req.cookies[consentCookieName]) {
