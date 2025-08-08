@@ -8,7 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 
 const assetsPath = './static';
-const pathToGovFrontend = './node_modules/govuk-frontend/govuk';
+const pathToGovFrontend = './node_modules/govuk-frontend-v5/dist/govuk';
 
 // -------- Assets
 task('build-assets-sass', () => src(['app/assets/sass/*.scss'])
@@ -17,7 +17,7 @@ task('build-assets-sass', () => src(['app/assets/sass/*.scss'])
     .on('error', sass.logError))
   .pipe(dest(`${assetsPath}/css`)));
 
-task('build-assets-js', () => src([`${pathToGovFrontend}/all.js`])
+task('build-assets-js', () => src([`${pathToGovFrontend}/all.bundle.js`])
   .pipe(dest(`${assetsPath}/js`)));
 task('build-assets', () => src([`${pathToGovFrontend}/assets/**/*`])
   .pipe(dest(`${assetsPath}/assets`)));

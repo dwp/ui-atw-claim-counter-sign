@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.32.0 (2025-08-6)
+* Frontend update to govuk v5
+* Autmoate test branch pickup
+* dependency updates
+
 ## 1.31.0 (2025-07-16)
 * Deploy new feedback link
 * update catalog info
