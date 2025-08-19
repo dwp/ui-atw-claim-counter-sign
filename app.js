@@ -4,7 +4,6 @@ const expressSession = require('express-session');
 const KmsKeyProvider = require('@dwp/dwp-cryptoservice/KmsKeyProvider');
 const CryptoService = require('@dwp/dwp-cryptoservice');
 const path = require('path');
-const bodyParser = require('body-parser');
 const config = require('./app/config/config-mapping');
 const logger = require('./app/logger/logger');
 const formatMonthYearObject = require('./app/lib/custom-filters/month-year-formatter');
@@ -15,7 +14,6 @@ const cookieMiddleware = require('./app/middleware/cookie-message');
 const urlMiddleware = require('./app/middleware/url.middleware');
 const nonceMiddleware = require('./app/middleware/nonce');
 const cookieDetailsGet = require('./app/routes/cookies/cookie-details.get');
-const accessbilityGet = require('./app/routes/cookies/cookie-details.get');
 const cookiePolicyPost = require('./app/routes/cookies/cookie-policy.post');
 const cookiePolicyGet = require('./app/routes/cookies/cookie-policy.get');
 const cookieParser = require('cookie-parser');
@@ -178,7 +176,10 @@ if (config.REDIS_PORT && config.REDIS_HOST) {
 // Create a new CASA application instance.
 const app = express();
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({
+  extended: true
+}));
 
 registerStaticAssets(app);
 

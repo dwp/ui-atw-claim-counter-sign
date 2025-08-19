@@ -280,7 +280,6 @@ describe('Middleware: cookie-message', () => {
     it('should redirect to / if referrer starts with "javascript:"', () => {
       const req = new Request();
       const res = new Response(req);
-      /* eslint-disable-next-line no-script-url */
       req.headers.Referrer = 'javascript:alert(1)';
       cookieMessage(app, cookieName, 'cookie-policy', 'cookie-consent', 'gtmdomain', mount,
         proxyMount, false);

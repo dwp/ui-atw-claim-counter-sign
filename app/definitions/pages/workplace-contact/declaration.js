@@ -43,7 +43,6 @@ if (declarationVersion === 1.0) {
   throw new Error(`Declaration version ${declarationVersion} not supported`);
 }
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: pageToDisplay,
   fieldValidators,

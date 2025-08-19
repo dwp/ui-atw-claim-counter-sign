@@ -10,7 +10,6 @@ const manualEntryWP = 'enter-company-address';
 const sourceAddressWP = 'company-address-search';
 const hiddenAddressWP = '__hidden_address__';
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/common/search-for-address-of-company.njk',
   fieldValidators,

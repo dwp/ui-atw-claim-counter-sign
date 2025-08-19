@@ -4,7 +4,6 @@ const {
   claimTypesSetKey
 } = require('../../../config/claim-types');
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/workplace-contact/claim-summary.njk',
   fieldValidators,

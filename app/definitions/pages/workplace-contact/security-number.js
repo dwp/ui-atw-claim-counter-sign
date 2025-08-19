@@ -108,7 +108,6 @@ const sendTotpEmail = async (hiddenData, cpageData) => {
   );
 };
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/workplace-contact/security-number.njk',
   fieldValidators,

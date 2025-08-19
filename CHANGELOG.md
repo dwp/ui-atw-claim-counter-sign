@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.33.0 (2025-08-15)
+* dockerfile version bumps
+* Major dependency update - eslint, hmrc-frontend, husky, gulp, gulp-saas, sinon, nhsuk-frontend
+* dependency updates
+
 ## 1.32.0 (2025-08-6)
 * Frontend update to govuk v5
 * Autmoate test branch pickup

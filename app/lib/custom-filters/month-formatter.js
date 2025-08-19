@@ -1,4 +1,3 @@
-/* eslint-disable prefer-template */
 const { DateTime } = require('luxon');
 
 /**

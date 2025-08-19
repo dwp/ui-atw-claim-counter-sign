@@ -8,7 +8,6 @@ const dot = require('graphlib-dot');
 const workplaceContact = require('./journeys/workplace-contact');
 const auth = require('./journeys/auth');
 
-// eslint-disable-next-line no-multi-assign
 exports = module.exports = () => {
   const plan = new Plan();
 

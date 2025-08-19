@@ -31,7 +31,6 @@ async function rejectClaim(rejectData) {
   });
 }
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/workplace-contact/request-changes-to-claim.njk',
   fieldValidators,

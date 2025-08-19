@@ -4,7 +4,6 @@ const pkg = require('../../package.json');
 const APP_VERSION = pkg.version;
 const PORT = config.get('app.port');
 
-// eslint-disable-next-line no-useless-escape
 const mountURL = config.get('app.mountUrl');
 
 // Get redis config from environment

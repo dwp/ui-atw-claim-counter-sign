@@ -20,7 +20,6 @@ const skipValidationStub = sinon.stub();
 const req = new Request();
 const res = new Response(req);
 
-// eslint-disable-next-line no-underscore-dangle
 page.__set__('axios', axiosStub);
 
 const dataResponse200 = {
@@ -258,7 +257,6 @@ describe('definitions/pages/workplace-contact/security-number', () => {
         },
       };
 
-      // eslint-disable-next-line prefer-promise-reject-errors
       axiosStub.resolves(Promise.reject({ response: { status: 401 } }));
 
       await this.result.hooks.postvalidate(req, res, nextStub);
@@ -301,7 +299,6 @@ describe('definitions/pages/workplace-contact/security-number', () => {
       };
       skipValidationStub.returns('false');
 
-      // eslint-disable-next-line prefer-promise-reject-errors
       axiosStub.resolves(Promise.reject({ response: 'error' }));
 
       await this.result.hooks.postvalidate(req, res, nextStub);
@@ -348,7 +345,6 @@ describe('definitions/pages/workplace-contact/security-number', () => {
         },
       };
 
-      // eslint-disable-next-line prefer-promise-reject-errors
       axiosStub.resolves(Promise.reject({ response: { status: 401 } }));
 
       await this.result.hooks.postvalidate(req, res, nextStub);
@@ -393,7 +389,6 @@ describe('definitions/pages/workplace-contact/security-number', () => {
       };
       skipValidationStub.returns('false');
 
-      // eslint-disable-next-line prefer-promise-reject-errors
       axiosStub.resolves(Promise.reject({ response: 401 }));
 
       await this.result.hooks.postvalidate(req, res, nextStub);

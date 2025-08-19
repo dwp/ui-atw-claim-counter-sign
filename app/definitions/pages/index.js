@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 module.exports = () => {
   const commonPages = {
     'company-postcode': require('./common/postcode-of-company')(),

@@ -45,7 +45,6 @@ async function getSecurityNumber(emailAddress, claimRef) {
   });
 }
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/workplace-contact/enter-claim-reference-number.njk',
   fieldValidators,

@@ -10,7 +10,7 @@ const config = require('../../../config/config-mapping');
 const log = logger('definitions:pages.common.postcode-of-company');
 
 const proxy = config.addressLookup.proxy === null ? null : new URL(config.addressLookup.proxy);
-const proxytunnel = config.addressLookup.proxy === null ? null // eslint-disable-next-line new-cap
+const proxytunnel = config.addressLookup.proxy === null ? null
   : new tunnel.httpsOverHttp({
     ca: [fs.readFileSync('certs/ca.pem')],
     key: fs.readFileSync('certs/key.pem'),
@@ -21,7 +21,6 @@ const proxytunnel = config.addressLookup.proxy === null ? null // eslint-disable
     },
   });
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/common/postcode-of-company.njk',
   fieldValidators,

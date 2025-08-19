@@ -35,7 +35,6 @@ async function expectValidatorToFailWithJourney(
     log.info(errors);
 
     const result = (errors[fieldName] || []).filter((r) => (r.validator === validatorName))[0];
-    /* eslint-disable-next-line no-unused-expressions */
     expect(result).to.not.be.undefined;
     expect(result)
       .to
@@ -101,7 +100,6 @@ async function expectValidatorToPassWithJourney(
     });
   } catch (errors) {
     const result = (errors[fieldName] || []).filter((r) => (r.validator === validatorName))[0];
-    /* eslint-disable-next-line no-unused-expressions */
     expect(result).to.be.undefined;
   }
 }

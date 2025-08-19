@@ -4,7 +4,6 @@ const fieldValidators = require('../../field-validators/common/enter-address-of-
 const sourceAddressWP = 'enter-company-address';
 const hiddenAddressWP = '__hidden_address__';
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/common/enter-address-of-company.njk',
   fieldGatherModifiers: {

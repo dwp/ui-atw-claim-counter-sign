@@ -1,5 +1,3 @@
-/* eslint-disable no-continue */
-/* eslint-disable no-restricted-syntax */
 const { SHOW_WELSH_LANGUAGE_TOGGLE } = require('../config/config-mapping');
 
 module.exports = (app) => {

@@ -6,7 +6,6 @@ const {
 } = require('../../../config/claim-types');
 const { AUTH_URL } = require('../../../config/uri');
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/workplace-contact/about-claim.njk',
   fieldValidators,

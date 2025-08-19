@@ -1,6 +1,5 @@
 const fieldValidators = require('../../field-validators/job-title');
 
-// eslint-disable-next-line func-names
 module.exports = () => ({
   view: 'pages/workplace-contact/job-title.njk',
   fieldValidators,

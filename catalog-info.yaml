@@ -12,11 +12,11 @@ metadata:
     gitlab.com/project-slug: dwp/health/atw/components/ui-claim-counter-sign
 
   labels:
-    dwp.gov.uk/version: 1.32.0
+    dwp.gov.uk/version: 1.33.0
     dwp.gov.uk/license: ISC
 
     dwp.gov.uk/last-verified.by: luke.halsall
-    dwp.gov.uk/last-verified.on: 2025-08-6
+    dwp.gov.uk/last-verified.on: 2025-08-15
 
 
     dwp.gov.uk/open-source.approved: true

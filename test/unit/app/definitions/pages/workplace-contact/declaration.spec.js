@@ -15,7 +15,6 @@ let assert, expect;
 const Request = require('../../../../../helpers/fakeRequest');
 const Response = require('../../../../../helpers/fakeResponse');
 
-// eslint-disable-next-line no-underscore-dangle
 page.__set__('axios', axiosStub);
 
 const dataResponse = {
