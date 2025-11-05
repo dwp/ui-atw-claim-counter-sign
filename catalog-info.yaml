@@ -4,7 +4,7 @@ kind: Component
 
 metadata:
   name: atw-ui-claim-counter-sign
-  title: "atw/ui-claim-counter-sign"
+  title: "Atw/Ui-Claim-Counter-Sign"
   description: |
     "Application for the Access To Work Claim journey involving counter-sign using the govuk-casa framework. This allows the counter-signer to review a claim submitted by the claimant to confirm if it's correct or not."
 
@@ -12,11 +12,11 @@ metadata:
     gitlab.com/project-slug: dwp/health/atw/components/ui-claim-counter-sign
 
   labels:
-    dwp.gov.uk/version: 1.33.0
+    dwp.gov.uk/version: 1.34.0
     dwp.gov.uk/license: ISC
 
-    dwp.gov.uk/last-verified.by: luke.halsall
-    dwp.gov.uk/last-verified.on: 2025-08-15
+    dwp.gov.uk/last-verified.by: abdullah.nazeer
+    dwp.gov.uk/last-verified.on: 2025-11-03
 
 
     dwp.gov.uk/open-source.approved: true

@@ -1,6 +1,6 @@
 {
   "name": "ui-claim-counter-sign",
-  "version": "1.33.0",
+  "version": "1.34.0",
   "description": "Access to Work Claim Counter Sign UI",
   "main": "app.js",
   "directories": {
@@ -19,33 +19,32 @@
   "dependencies": {
     "@dwp/dwp-cryptoservice": "2.3.1-release.842028270",
     "@dwp/govuk-casa": "7.2.6",
-    "axios": "1.11.0",
-    "config": "4.1.0",
+    "axios": "1.12.2",
+    "config": "4.1.1",
     "connect-redis": "8.1.0",
     "cookie-parser": "1.4.7",
-    "debug": "4.4.1",
+    "debug": "4.4.3",
     "express": "4.21.2",
     "express-session": "1.18.2",
-    "govuk-frontend-v5": "npm:govuk-frontend@5.11.1",
+    "govuk-frontend-v5": "npm:govuk-frontend@5.13.0",
     "graphlib": "2.1.8",
     "graphlib-dot": "0.6.4",
-    "hmrc-frontend": "6.80.0",
-    "ioredis": "5.7.0",
-    "luxon": "3.7.1",
+    "hmrc-frontend": "6.97.0",
+    "ioredis": "5.8.1",
+    "luxon": "3.7.2",
     "minimatch": "10.0.3",
     "minimist": "1.2.8",
     "moment": "2.30.1",
-    "nhsuk-frontend": "9.6.4",
-    "pino": "9.9.0",
+    "pino": "10.0.0",
     "session-file-store": "1.5.0",
     "tunnel": "0.0.6",
     "xml2js": "0.6.2"
   },
   "devDependencies": {
     "@dwp/eslint-config-base": "9.0.2",
-    "chai": "5.2.1",
-    "chai-as-promised": "8.0.1",
-    "eslint": "9.33.0",
+    "chai": "6.2.0",
+    "chai-as-promised": "8.0.2",
+    "eslint": "9.38.0",
     "eslint-formatter-table": "7.32.1",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-unicorn": "60.0.0",
@@ -55,10 +54,10 @@
     "gulp-uglify": "3.0.2",
     "husky": "9.1.7",
     "json5": "2.2.3",
-    "mocha": "11.7.1",
+    "mocha": "11.7.4",
     "nyc": "17.1.0",
     "rewire": "9.0.0",
-    "sass": "1.90.0",
+    "sass": "1.93.2",
     "sinon": "21.0.0",
     "sinon-chai": "3.7.0"
   },
@@ -69,11 +68,11 @@
         "y18n": "5.0.8"
       }
     },
-    "gulp": {
-      "glob-parent": "6.0.2"
-    },
     "@dwp/govuk-casa": {
       "express-session": "$express-session"
+    },
+    "sinon-chai": {
+      "chai": "$chai"
     }
   },
   "author": "Health PDU",

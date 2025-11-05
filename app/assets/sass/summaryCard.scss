@@ -150,7 +150,9 @@
   }
 
   th, td {
-    border-bottom: none !important
+    border-bottom: none !important;
+    text-align: left;
+    vertical-align: top;
   }
 
   table {

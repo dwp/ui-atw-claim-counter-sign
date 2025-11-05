@@ -1,27 +1,5 @@
 {
   "extends": [
     "local>dwp/secure-development/renovate-bot//shared-configs/dwp-health-configuration-override"
-  ],
-  "packageRules": [
-    {
-      "description": "Prevent Renovate generation for sinon-chai until ESM is supported rather than CommonJS.",
-      "matchPackageNames": ["sinon-chai"],
-      "allowedVersions": "< 4.0.0"
-    },
-    {
-      "description": "Prevent Renovate generation for connect-redis until HTO-9229 completed.",
-      "matchPackageNames": ["connect-redis"],
-      "allowedVersions": "< 9.0.0"
-    },
-    {
-      "description": "Restrict to CASA 7 until resource available to upgrade.",
-      "matchPackageNames": ["@dwp/govuk-casa"],
-      "allowedVersions": "< 8.0.0"
-    },
-    {
-      "description": "Prevent Renovate generation for express until HTO-8812 completed.",
-      "matchPackageNames": ["express"],
-      "allowedVersions": "< 5.0.0"
-    }
   ]
 }

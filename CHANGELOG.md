@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.34.0 (2025-11-03)
+* updated email regex validation
+* google analytics fix - data layer PII fix
+* dependency updates
+
 ## 1.33.0 (2025-08-15)
 * dockerfile version bumps
 * Major dependency update - eslint, hmrc-frontend, husky, gulp, gulp-saas, sinon, nhsuk-frontend
