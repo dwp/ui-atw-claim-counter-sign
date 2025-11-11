@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.35.0 (2025-11-07)
+* google analytics fix - data layer PII fix
+
 ## 1.34.0 (2025-11-03)
 * updated email regex validation
 * google analytics fix - data layer PII fix

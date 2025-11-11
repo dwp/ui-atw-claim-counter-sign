@@ -7,8 +7,11 @@
   "changeButton": "Change",
   "label": "Select an address",
   "manualLink": "I can’t find %s's address in the list",
+  "manualLink-ga": "I can't find an address in the list",
   "manualLinkNoAddress": "I can't find %s's address",
+  "manualLinkNoAddress-ga": "I can't find an address",
   "noAddressesFound": "No addresses found for %s",
+  "noAddressesFound-ga": "No addresses found",
   "changePostcode": " postcode",
   "select": {
     "errors": {

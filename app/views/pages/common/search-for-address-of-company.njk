@@ -40,16 +40,21 @@
 
     {% else %}
         {{ govukInsetText({
-            text: t('search-for-address-of-company:noAddressesFound', postcode)
+            text: t('search-for-address-of-company:noAddressesFound', postcode),
+            attributes: {
+                "data-ga-question": t('search-for-address-of-company:noAddressesFound-ga')
+            }
         }) }}
     {% endif %}
 
     {% if addressLength > 0 %}
-        <p class="govuk-body"><a
+        <p class="govuk-body"><a 
+                    data-ga-question="{{ t('search-for-address-of-company:manualLink-ga') }}" 
                     href="{{ manualAddressUrl }}">{{ t('search-for-address-of-company:manualLink',
                     companyName) }}</a></p>
     {% else %}
-        <p class="govuk-body"><a
+        <p class="govuk-body"><a 
+                    data-ga-question="{{ t('search-for-address-of-company:manualLinkNoAddress-ga') }}" 
                     href="{{ manualAddressUrl }}">{{ t('search-for-address-of-company:manualLinkNoAddress',
                     companyName) }}</a></p>
     {% endif %}
